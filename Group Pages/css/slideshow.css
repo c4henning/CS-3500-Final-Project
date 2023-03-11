@@ -1,0 +1,36 @@
+.slideshow-container {
+    width: 20em;
+    height: 20em;
+    position: relative;
+}
+.slideshow-container img {
+    position: absolute;
+    animation: slideshow 20s infinite;
+    /* animation length should be (delay * number of slides) */
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    filter:drop-shadow(3px 3px 3px #666666)
+}
+.slideshow-container img:nth-child(1) {
+    animation-delay: 0s;
+    /* animation delay should be (length / number of slides) */
+}
+.slideshow-container img:nth-child(2) {
+    animation-delay: 5s;
+}
+.slideshow-container img:nth-child(3) {
+    animation-delay: 10s;
+}
+.slideshow-container img:nth-child(4) {
+    animation-delay: 15s;
+}
+
+@keyframes slideshow {
+    20% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+}
