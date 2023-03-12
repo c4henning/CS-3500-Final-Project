@@ -1,2 +1,4 @@
 # ignore all files in my webstorm folder ".idea/" 
 .idea/
+# imported local bootstrap copy for ide autocomplete
+Group Pages/css/bootstrap.min.css
