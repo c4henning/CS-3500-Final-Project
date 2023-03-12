@@ -1,5 +1,5 @@
 /*Teams*/
-
+/*Website and Socials button size*/
 a span {
     font-size: 14px;
 }
@@ -10,3 +10,12 @@ a span {
     }
 }
 
+/*Carousel Styling*/
+.c-img {
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.c-item {
+    height: 540px;
+}
