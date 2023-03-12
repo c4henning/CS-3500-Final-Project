@@ -1,0 +1,13 @@
+.JaidenTable tr:nth-child(even), .list-group-item:nth-child(even) {
+		background-color: #d7d7d7;
+		}
+	}
+	
+.JaidenTable tr {
+		text-align: left;
+	}
+
+.JaidenTable tr:hover {
+		background-color: #a6a6a6;
+	}
+.DataStyle td { border:1pt solid black; text-align:center; padding:0.3em; }
