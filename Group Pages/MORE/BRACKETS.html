@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Navigation Start-->
+  <title>Rochester Knighthawks - NLL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/ChrisTeams.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="../INDEX.html">National Lacrosse League</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="../ABOUT.html">About</a></li>
+      <li><a href="../CATALOG.html">Catalog</a></li>
+      <li><a href="../REFERENCES.html">References</a></li>
+      <li><a href="../SCHEDULE.html">Schedule</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Teams
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="../EAST_TEAMS.html">East</a></li>
+          <li><a href="../WEST_TEAMS.html">West</a></li>
+        </ul>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="BRACKETS.html">Bracket Maker</a></li>
+          <li><a href="HISTORY.html">History</a></li>
+          <li><a href="RULES.html">Rules</a></li>
+          <li><a href="STATS.html">Stats</a></li>
+
+        </ul>
+    </ul>
+  </div>
+</nav>
+<!-- Navigation End-->
+<div class="container">
+  <div class="row">
+    <h1>Playoff Bracket</h1>
+    <form>
+      <div class="row">
+        <div class="col-md-3">
+          <h2>East Conference Semifinal</h2>
+          <label for="east1">Select the 1st seed from the East Conference:</label>
+          <select id="east1" name="east1">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+          </select>
+
+          <label for="east4">Select the 4th seed from the East Conference:</label>
+          <select id="east4" name="east4">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+          </select>
+
+          <label for="east2">Select the 2nd seed from the East Conference:</label>
+          <select id="east2" name="east2">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+          </select>
+
+          <label for="east3">Select the 3rd seed from the East Conference:</label>
+          <select id="east3" name="east3">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+          </select>
+
+          <h2>West Conference Semifinal</h2>
+          <label for="west1">Select the 1st seed from the West Conference:</label>
+          <select id="west1" name="west1">
+            <option value="">Select a team</option>
+            <option value="Calgary Roughnecks">Calgary Roughnecks</option>
+            <option value="Colorado Mammoth">Colorado Mammoth</option>
+            <option value="Las Vegas Desert Dogs">Las Vegas Desert Dogs</option>
+            <option value="Panther City Lacrosse Club">Panther City Lacrosse Club</option>
+            <option value="San Diego Seals">San Diego Seals</option>
+            <option value="Saskatchewan Rush">Saskatchewan Rush</option>
+            <option value="Vancouver Warriors">Vancouver Warriors</option>
+          </select>
+
+          <label for="wildcard">Select the "wild card" team:</label>
+          <select id="wildcard" name="wildcard">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+            <option value="Calgary Roughnecks">Calgary Roughnecks</option>
+            <option value="Colorado Mammoth">Colorado Mammoth</option>
+            <option value="Las Vegas Desert Dogs">Las Vegas Desert Dogs</option>
+            <option value="Panther City Lacrosse Club">Panther City Lacrosse Club</option>
+            <option value="San Diego Seals">San Diego Seals</option>
+            <option value="Saskatchewan Rush">Saskatchewan Rush</option>
+            <option value="Vancouver Warriors">Vancouver Warriors</option>
+          </select>
+
+          <label for="west2">Select the 2nd seed from the West Conference:</label>
+          <select id="west2" name="west2">
+            <option value="">Select a team</option>
+            <option value="Calgary Roughnecks">Calgary Roughnecks</option>
+            <option value="Colorado Mammoth">Colorado Mammoth</option>
+            <option value="Las Vegas Desert Dogs">Las Vegas Desert Dogs</option>
+            <option value="Panther City Lacrosse Club">Panther City Lacrosse Club</option>
+            <option value="San Diego Seals">San Diego Seals</option>
+            <option value="Saskatchewan Rush">Saskatchewan Rush</option>
+            <option value="Vancouver Warriors">Vancouver Warriors</option>
+          </select>
+
+          <label for="west3">Select the 3rd seed from the West Conference:</label>
+          <select id="west3" name="west3">
+            <option value="">Select a team</option>
+            <option value="Calgary Roughnecks">Calgary Roughnecks</option>
+            <option value="Colorado Mammoth">Colorado Mammoth</option>
+            <option value="Las Vegas Desert Dogs">Las Vegas Desert Dogs</option>
+            <option value="Panther City Lacrosse Club">Panther City Lacrosse Club</option>
+            <option value="San Diego Seals">San Diego Seals</option>
+            <option value="Saskatchewan Rush">Saskatchewan Rush</option>
+            <option value="Vancouver Warriors">Vancouver Warriors</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <!-- TODO: East Conference Finals -->
+          <h2>East Conference Final</h2>
+          <label for="eastCon1">Select the 1st finalist from the East Conference:</label>
+          <select id="eastCon1" name="eastCon1">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+          </select>
+          <label for="eastCon2">Select the 2nd finalist from the East Conference:</label>
+          <select id="eastCon2" name="eastCon2">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+          </select>
+
+          <!-- TODO: West Conference Finals -->
+          <h2>West Conference Final</h2>
+          <label for="westCon1">Select the 1st finalist from the West Conference:</label>
+          <select id="westCon1" name="westCon1">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+            <option value="Calgary Roughnecks">Calgary Roughnecks</option>
+            <option value="Colorado Mammoth">Colorado Mammoth</option>
+            <option value="Las Vegas Desert Dogs">Las Vegas Desert Dogs</option>
+            <option value="Panther City Lacrosse Club">Panther City Lacrosse Club</option>
+            <option value="San Diego Seals">San Diego Seals</option>
+            <option value="Saskatchewan Rush">Saskatchewan Rush</option>
+            <option value="Vancouver Warriors">Vancouver Warriors</option>
+          </select>
+          <label for="westCon2">Select the 2nd finalist from the West Conference:</label>
+          <select id="westCon2" name="westCon2">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+            <option value="Calgary Roughnecks">Calgary Roughnecks</option>
+            <option value="Colorado Mammoth">Colorado Mammoth</option>
+            <option value="Las Vegas Desert Dogs">Las Vegas Desert Dogs</option>
+            <option value="Panther City Lacrosse Club">Panther City Lacrosse Club</option>
+            <option value="San Diego Seals">San Diego Seals</option>
+            <option value="Saskatchewan Rush">Saskatchewan Rush</option>
+            <option value="Vancouver Warriors">Vancouver Warriors</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <!-- TODO: NLL Final -->
+          <h2>NLL Final</h2>
+          <label for="finalist1">Select the East Conference Champions:</label>
+          <select id="finalist1" name="finalist1">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+          </select>
+
+          <label for="finalist2">Select the West Conference Champions:</label>
+          <select id="finalist2" name="finalist2">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+            <option value="Calgary Roughnecks">Calgary Roughnecks</option>
+            <option value="Colorado Mammoth">Colorado Mammoth</option>
+            <option value="Las Vegas Desert Dogs">Las Vegas Desert Dogs</option>
+            <option value="Panther City Lacrosse Club">Panther City Lacrosse Club</option>
+            <option value="San Diego Seals">San Diego Seals</option>
+            <option value="Saskatchewan Rush">Saskatchewan Rush</option>
+            <option value="Vancouver Warriors">Vancouver Warriors</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <h2>NLL Playoff Champions</h2>
+          <label for="champions">Select the NLL Playoff Champions:</label>
+          <select id="champions" name="champions">
+            <option value="">Select a team</option>
+            <option value="Albany Firewolves">Albany Firewolves</option>
+            <option value="Buffalo Bandits">Buffalo Bandits</option>
+            <option value="Georgia Swarm">Georgia Swarm</option>
+            <option value="Halifax Thunderbirds">Halifax Thunderbirds</option>
+            <option value="New York Riptide">New York Riptide</option>
+            <option value="Philadelphia Wings">Philadelphia Wings</option>
+            <option value="Rochester Knighthawks">Rochester Knighthawks</option>
+            <option value="Toronto Rock">Toronto Rock</option>
+            <option value="Calgary Roughnecks">Calgary Roughnecks</option>
+            <option value="Colorado Mammoth">Colorado Mammoth</option>
+            <option value="Las Vegas Desert Dogs">Las Vegas Desert Dogs</option>
+            <option value="Panther City Lacrosse Club">Panther City Lacrosse Club</option>
+            <option value="San Diego Seals">San Diego Seals</option>
+            <option value="Saskatchewan Rush">Saskatchewan Rush</option>
+            <option value="Vancouver Warriors">Vancouver Warriors</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <br><br>
+        <input type="submit" value="Submit">
+      </div>
+      <div class="row">
+        <h3>Playoff Schedule:</h3>
+
+        <p>First Round: Single Elimination (Weekend of May 5-7)</p>
+        <p>Conference Finals: Best-of-Three Series</p>
+        <p>NLL Finals:</p>
+        <ul>
+          <li>Game 1: Memorial Day Weekend</li>
+          <li>Game 2: Memorial Day Weekend</li>
+          <li>Game 3 (if necessary): Weekend of June 2-4</li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
