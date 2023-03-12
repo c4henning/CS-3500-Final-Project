@@ -1,0 +1,12 @@
+/*Teams*/
+
+a span {
+    font-size: 14px;
+}
+
+@media (576px <= width < 768px) {
+    a span {
+        font-size: 2em;
+    }
+}
+
