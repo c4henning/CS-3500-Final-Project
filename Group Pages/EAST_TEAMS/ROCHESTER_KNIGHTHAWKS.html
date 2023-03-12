@@ -8,17 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    tr:nth-child(even), .list-group-item:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-    table tr:hover {
-      background-color: #d0d0ce;
-    }
-    #teamPhoto {
-      border-radius: 3px;
-    }
-  </style>
+  <link rel="stylesheet" href="../css/ChrisTeams.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -53,16 +43,16 @@
 <!-- Navigation End-->
 <div class="container">
   <!-- Header -->
-  <h1 style="text-align: center;">
+  <h1 id="title">
     THE ROCHESTER KNIGHTHAWKS
-    <img src="../Images/rochester_knighthawks.png" style="width: 2em" alt="Rochester Knighthawks logo">
+    <img src="../Images/rochester_knighthawks.png" id="logo" alt="Rochester Knighthawks logo">
   </h1>
   <div class="row">
     <div class="col-md-9">
       <!-- Meet the team -->
       <div class="jumbotron">
         <h2>Meet The Team</h2>
-        <img src="../Images/rochester_knighthawks_team.jpg"  style="width: 100%" alt="Knighthawks on the field" id="teamPhoto">
+        <img src="../Images/rochester_knighthawks_team.jpg" alt="Knighthawks on the field" id="teamPhoto">
         <br><br>
         <p>
           The Knighthawks were originally founded in 1995 and played in the NLL until 2019 when they were sold and moved to Halifax, Nova Scotia, becoming the Halifax Thunderbirds. However, the Knighthawks were re-established in 2020 as an expansion team and have since been playing in the league once again.
@@ -286,51 +276,44 @@
         <div class="panel-body">
           <ul class="list-group">
             <li class="list-group-item-heading">Forwards</li>
-            <li class="list-group-item">#5 Canada Turner Evans</li>
-            <li class="list-group-item">#7 Canada Thomas Vela</li>
-            <li class="list-group-item">#9 Canada Curtis Knight (Alt. Capt.)</li>
-            <li class="list-group-item">#10 United States Connor Fields</li>
-            <li class="list-group-item">#18 Canada Austin Hasen</li>
-            <li class="list-group-item">#19 Canada Holden Cattoni</li>
-            <li class="list-group-item">#43 Canada Ryan Smith</li>
-            <li class="list-group-item">#91 Canada Thomas Hoggarth</li>
-            <br>
+              <li class="list-group-item">#5 <img src="../Images/canada.png" alt="Canada"> Turner Evans</li>
+              <li class="list-group-item">#7 <img src="../Images/canada.png" alt="Canada"> Thomas Vela</li>
+              <li class="list-group-item">#9 <img src="../Images/canada.png" alt="Canada"> Curtis Knight (Alt. Capt.)</li>
+              <li class="list-group-item">#10 <img src="../Images/USA.png" alt="Canada"> Connor Fields</li>
+              <li class="list-group-item">#18 <img src="../Images/canada.png" alt="Canada"> Austin Hasen</li>
+              <li class="list-group-item">#19 <img src="../Images/canada.png" alt="Canada"> Holden Cattoni</li>
+              <li class="list-group-item">#43 <img src="../Images/canada.png" alt="Canada"> Ryan Smith</li>
+              <li class="list-group-item">#91 <img src="../Images/canada.png" alt="Canada"> Thomas Hoggarth</li>
             <li class="list-group-item-heading">Transition</li>
-            <li class="list-group-item">#17 Canada Ryland Rees</li>
-            <li class="list-group-item">#67 Canada Jordan Stouros</li>
-            <li class="list-group-item">#81 Canada Matt Gilray</li>
-            <br>
+              <li class="list-group-item">#17 <img src="../Images/canada.png" alt="Canada"> Ryland Rees</li>
+              <li class="list-group-item">#67 <img src="../Images/canada.png" alt="Canada"> Jordan Stouros</li>
+              <li class="list-group-item">#81 <img src="../Images/canada.png" alt="Canada"> Matt Gilray</li>
             <li class="list-group-item-heading">Defensemen</li>
-            <li class="list-group-item">#2 Canada Paul Dawson (Captain)</li>
-            <li class="list-group-item">#4 Canada Ethan Schott</li>
-            <li class="list-group-item">#6 Canada Brad Gillies</li>
-            <li class="list-group-item">#8 Canada Mitch Ogilvie</li>
-            <li class="list-group-item">#15 Canada Matt Bennett</li>
-            <li class="list-group-item">#23 Canada Curtis Romanchych</li>
-            <li class="list-group-item">#27 Canada Tyler Halls</li>
-            <li class="list-group-item">#29 Canada Tyler Biles</li>
-            <br>
+              <li class="list-group-item">#2 <img src="../Images/canada.png" alt="Canada"> Paul Dawson (Captain)</li>
+              <li class="list-group-item">#4 <img src="../Images/canada.png" alt="Canada"> Ethan Schott</li>
+              <li class="list-group-item">#6 <img src="../Images/canada.png" alt="Canada"> Brad Gillies</li>
+              <li class="list-group-item">#8 <img src="../Images/canada.png" alt="Canada"> Mitch Ogilvie</li>
+              <li class="list-group-item">#15 <img src="../Images/canada.png" alt="Canada"> Matt Bennett</li>
+              <li class="list-group-item">#23 <img src="../Images/canada.png" alt="Canada"> Curtis Romanchych</li>
+              <li class="list-group-item">#27 <img src="../Images/canada.png" alt="Canada"> Tyler Halls</li>
+              <li class="list-group-item">#29 <img src="../Images/canada.png" alt="Canada"> Tyler Biles</li>
             <li class="list-group-item-heading">Goaltenders</li>
-            <li class="list-group-item">#49 Canada Rylan Hartley</li>
-            <li class="list-group-item">#1 Canada Riley Hutchcraft</li>
-            <br>
+              <li class="list-group-item">#49 <img src="../Images/canada.png" alt="Canada"> Rylan Hartley</li>
+              <li class="list-group-item">#1 <img src="../Images/canada.png" alt="Canada"> Riley Hutchcraft</li>
             <li class="list-group-item-heading">Practice Squad</li>
-            <li class="list-group-item">#25 Canada Parker Pipher (T)</li>
-            <li class="list-group-item">#71 Canada Jeff Wittig (F)</li>
-            <li class="list-group-item">#93 Canada Pent Eistrat (F)</li>
-            <br>
+              <li class="list-group-item">#25 <img src="../Images/canada.png" alt="Canada"> Parker Pipher (T)</li>
+              <li class="list-group-item">#71 <img src="../Images/canada.png" alt="Canada"> Jeff Wittig (F)</li>
+              <li class="list-group-item">#93 <img src="../Images/canada.png" alt="Canada"> Pent Eistrat (F)</li>
             <li class="list-group-item-heading">Inactive roster</li>
-            <li class="list-group-item">#37 Canada Dan Coates (D)</li>
-            <li class="list-group-item">#96 Canada Cory Highfield (T)</li>
-            <br>
+              <li class="list-group-item">#37 <img src="../Images/canada.png" alt="Canada"> Dan Coates (D)</li>
+              <li class="list-group-item">#96 <img src="../Images/canada.png" alt="Canada"> Cory Highfield (T)</li>
             <li class="list-group-item-heading">Unable to play</li>
-            <li class="list-group-item">#3 Canada Thomas Whitty (T)</li>
-            <li class="list-group-item">#52 Canada Carter Schott (T)</li>
-            <br>
+              <li class="list-group-item">#3 <img src="../Images/canada.png" alt="Canada"> Thomas Whitty (T)</li>
+              <li class="list-group-item">#52 <img src="../Images/canada.png" alt="Canada"> Carter Schott (T)</li>
             <li class="list-group-item-heading">Coaches</li>
-            <li class="list-group-item">Mike Hasen (Head)</li>
-            <li class="list-group-item">Gavin Prout</li>
-            <li class="list-group-item">Pat O'Toole</li>
+              <li class="list-group-item">Mike Hasen (Head)</li>
+              <li class="list-group-item">Gavin Prout</li>
+              <li class="list-group-item">Pat O'Toole</li>
           </ul>
         </div>
       </div>

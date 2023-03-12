@@ -1,0 +1,23 @@
+#title {
+    text-align: center;
+}
+#logo {
+    width: 2em
+}
+#teamPhoto {
+    border-radius: 3px;
+    width: 100%
+}
+tr:nth-child(even), .list-group-item:nth-child(even) {
+    background-color: #f2f2f2;
+}
+table tr:hover {
+    background-color: #d0d0ce;
+}
+.list-group-item-heading {
+    margin-top: 0.5em;
+}
+.list-group-item img {
+    height: 1em;
+    width: auto;
+}
