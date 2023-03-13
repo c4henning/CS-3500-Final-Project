@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Navigation Start-->
   <title>Bracket Creator - NLL</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,6 +41,7 @@
   </style>
 </head>
 <body>
+<!-- Navigation Start-->
 <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -72,16 +72,24 @@
 </nav>
 <!-- Navigation End-->
 <div class="container">
+  <!-- Intro Start -->
+
+  <div class="row">
+    <div id="intro">
+      <h1>Playoff Bracket</h1>
+      <p>
+        It's that time of year again - the playoffs are here! Whether you're a die-hard fan or just enjoy some friendly competition, filling out a playoff bracket is a great way to get in on the action. Take a look at the bracket below and use your knowledge of the teams, players, and matchups to make your predictions. Will the favorites advance or will there be some upsets? There's only one way to find out. So get going and start filling in your picks. Good luck!
+      </p>
+    </div>
+  </div>
+  <!-- Intro End / Form Start -->
   <div class="row">
     <form>
-      <div id="intro">
-        <h1>Playoff Bracket</h1>
-        <p>
-          It's that time of year again - the playoffs are here! Whether you're a die-hard fan or just enjoy some friendly competition, filling out a playoff bracket is a great way to get in on the action. Take a look at the bracket below and use your knowledge of the teams, players, and matchups to make your predictions. Will the favorites advance or will there be some upsets? There's only one way to find out. So get going and start filling in your picks. Good luck!
-        </p>
-      </div>
       <div class="row" id="formBox">
+
+        <!-- Conference Semifinals -->
         <div class="col-md-3">
+          <!-- East Semifinals -->
           <h2>East Conference Semifinal</h2>
           <label for="east1">Select the 1st seed from the East Conference:</label>
           <select id="east1" name="east1">
@@ -135,6 +143,7 @@
             <option value="Toronto Rock">Toronto Rock</option>
           </select><br>
 
+          <!-- West Semifinals -->
           <h2>West Conference Semifinal</h2>
           <label for="west1">Select the 1st seed from the West Conference:</label>
           <select id="west1" name="west1">
@@ -192,8 +201,10 @@
             <option value="Vancouver Warriors">Vancouver Warriors</option>
           </select><br>
         </div>
+
+        <!-- Conference Finals -->
         <div class="col-md-3">
-          <!-- TODO: East Conference Finals -->
+          <!-- East Conference -->
           <h2>East Conference Final</h2>
           <label for="eastCon1">Select the 1st finalist from the East Conference:</label>
           <select id="eastCon1" name="eastCon1">
@@ -221,7 +232,7 @@
             <option value="Toronto Rock">Toronto Rock</option>
           </select><br>
 
-          <!-- TODO: West Conference Finals -->
+          <!-- West Conference -->
           <h2>West Conference Final</h2>
           <label for="westCon1">Select the 1st finalist from the West Conference:</label>
           <select id="westCon1" name="westCon1">
@@ -263,8 +274,9 @@
             <option value="Vancouver Warriors">Vancouver Warriors</option>
           </select><br>
         </div>
+
+        <!-- NLL Final -->
         <div class="col-md-3">
-          <!-- TODO: NLL Final -->
           <h2>NLL Final</h2>
           <label for="finalist1">Select the East Conference Champions:</label>
           <select id="finalist1" name="finalist1">
@@ -299,6 +311,8 @@
             <option value="Vancouver Warriors">Vancouver Warriors</option>
           </select><br>
         </div>
+
+        <!-- Champion -->
         <div class="col-md-3">
           <h2>NLL Playoff Champions</h2>
           <label for="champions">Select the NLL Playoff Champions:</label>
@@ -323,7 +337,8 @@
           <img src="../Images/NLL_logo.png" alt="NLL Logo" id="logoNLL"/>
         </div>
       </div>
-      <div class="row">
+      <!-- Submission Line -->
+      <div class="row" id="formSubmit">
         <div class="col-md-12">
           <hr>
           <label for="name">Name:</label>
@@ -334,6 +349,7 @@
       </div>
     </form>
   </div>
+  <!-- Form End / Info Start -->
   <div class="row">
     <div class="col-md-6">
       <h4>Remember:</h4>
@@ -356,7 +372,8 @@
       </ul>
     </div>
   </div>
-  <br>
+  <!-- Info End -->
 </div>
+<br>
 </body>
 </html>
