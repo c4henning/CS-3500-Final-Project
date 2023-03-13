@@ -9,6 +9,37 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../css/ChrisTeams.css">
+  <style>
+    #intro {
+      background-color: #f8f9fa;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+      border-radius: 0.3rem;
+      border: 1px solid #dee2e6;
+      text-align: center;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    #formBox {
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding-bottom: 1em;
+    }
+    #logoNLL {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateX(-50%) translateY(225%);
+      height: auto;
+      width: 50%;
+    }
+    @media only screen and (max-width: 991px) {
+      .container img {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -44,9 +75,14 @@
 <!-- Navigation End-->
 <div class="container">
   <div class="row">
-    <h1>Playoff Bracket</h1>
     <form>
-      <div class="row">
+      <div id="intro">
+        <h1>Playoff Bracket</h1>
+        <p>
+          It's that time of year again - the playoffs are here! Whether you're a die-hard fan or just enjoy some friendly competition, filling out a playoff bracket is a great way to get in on the action. Take a look at the bracket below and use your knowledge of the teams, players, and matchups to make your predictions. Will the favorites advance or will there be some upsets? There's only one way to find out. So get going and start filling in your picks. Good luck!
+        </p>
+      </div>
+      <div class="row" id="formBox">
         <div class="col-md-3">
           <h2>East Conference Semifinal</h2>
           <label for="east1">Select the 1st seed from the East Conference:</label>
@@ -60,7 +96,7 @@
             <option value="Philadelphia Wings">Philadelphia Wings</option>
             <option value="Rochester Knighthawks">Rochester Knighthawks</option>
             <option value="Toronto Rock">Toronto Rock</option>
-          </select>
+          </select><br>
 
           <label for="east4">Select the 4th seed from the East Conference:</label>
           <select id="east4" name="east4">
@@ -73,7 +109,7 @@
             <option value="Philadelphia Wings">Philadelphia Wings</option>
             <option value="Rochester Knighthawks">Rochester Knighthawks</option>
             <option value="Toronto Rock">Toronto Rock</option>
-          </select>
+          </select><br>
 
           <label for="east2">Select the 2nd seed from the East Conference:</label>
           <select id="east2" name="east2">
@@ -86,7 +122,7 @@
             <option value="Philadelphia Wings">Philadelphia Wings</option>
             <option value="Rochester Knighthawks">Rochester Knighthawks</option>
             <option value="Toronto Rock">Toronto Rock</option>
-          </select>
+          </select><br>
 
           <label for="east3">Select the 3rd seed from the East Conference:</label>
           <select id="east3" name="east3">
@@ -99,7 +135,7 @@
             <option value="Philadelphia Wings">Philadelphia Wings</option>
             <option value="Rochester Knighthawks">Rochester Knighthawks</option>
             <option value="Toronto Rock">Toronto Rock</option>
-          </select>
+          </select><br>
 
           <h2>West Conference Semifinal</h2>
           <label for="west1">Select the 1st seed from the West Conference:</label>
@@ -112,9 +148,9 @@
             <option value="San Diego Seals">San Diego Seals</option>
             <option value="Saskatchewan Rush">Saskatchewan Rush</option>
             <option value="Vancouver Warriors">Vancouver Warriors</option>
-          </select>
+          </select><br>
 
-          <label for="wildcard">Select the "wild card" team:</label>
+          <label for="wildcard">Select the "wild card" <span class="glyphicon glyphicon-info-sign" aria-hidden="true" title="The 'wild card' entry is the team with the best record between the fourth-place team in the West standings and the fifth-place finisher in the East"></span> team:</label>
           <select id="wildcard" name="wildcard">
             <option value="">Select a team</option>
             <option value="Albany Firewolves">Albany Firewolves</option>
@@ -132,7 +168,7 @@
             <option value="San Diego Seals">San Diego Seals</option>
             <option value="Saskatchewan Rush">Saskatchewan Rush</option>
             <option value="Vancouver Warriors">Vancouver Warriors</option>
-          </select>
+          </select><br>
 
           <label for="west2">Select the 2nd seed from the West Conference:</label>
           <select id="west2" name="west2">
@@ -144,7 +180,7 @@
             <option value="San Diego Seals">San Diego Seals</option>
             <option value="Saskatchewan Rush">Saskatchewan Rush</option>
             <option value="Vancouver Warriors">Vancouver Warriors</option>
-          </select>
+          </select><br>
 
           <label for="west3">Select the 3rd seed from the West Conference:</label>
           <select id="west3" name="west3">
@@ -156,7 +192,7 @@
             <option value="San Diego Seals">San Diego Seals</option>
             <option value="Saskatchewan Rush">Saskatchewan Rush</option>
             <option value="Vancouver Warriors">Vancouver Warriors</option>
-          </select>
+          </select><br>
         </div>
         <div class="col-md-3">
           <!-- TODO: East Conference Finals -->
@@ -172,7 +208,8 @@
             <option value="Philadelphia Wings">Philadelphia Wings</option>
             <option value="Rochester Knighthawks">Rochester Knighthawks</option>
             <option value="Toronto Rock">Toronto Rock</option>
-          </select>
+          </select><br>
+
           <label for="eastCon2">Select the 2nd finalist from the East Conference:</label>
           <select id="eastCon2" name="eastCon2">
             <option value="">Select a team</option>
@@ -184,7 +221,7 @@
             <option value="Philadelphia Wings">Philadelphia Wings</option>
             <option value="Rochester Knighthawks">Rochester Knighthawks</option>
             <option value="Toronto Rock">Toronto Rock</option>
-          </select>
+          </select><br>
 
           <!-- TODO: West Conference Finals -->
           <h2>West Conference Final</h2>
@@ -206,7 +243,8 @@
             <option value="San Diego Seals">San Diego Seals</option>
             <option value="Saskatchewan Rush">Saskatchewan Rush</option>
             <option value="Vancouver Warriors">Vancouver Warriors</option>
-          </select>
+          </select><br>
+
           <label for="westCon2">Select the 2nd finalist from the West Conference:</label>
           <select id="westCon2" name="westCon2">
             <option value="">Select a team</option>
@@ -225,7 +263,7 @@
             <option value="San Diego Seals">San Diego Seals</option>
             <option value="Saskatchewan Rush">Saskatchewan Rush</option>
             <option value="Vancouver Warriors">Vancouver Warriors</option>
-          </select>
+          </select><br>
         </div>
         <div class="col-md-3">
           <!-- TODO: NLL Final -->
@@ -241,7 +279,7 @@
             <option value="Philadelphia Wings">Philadelphia Wings</option>
             <option value="Rochester Knighthawks">Rochester Knighthawks</option>
             <option value="Toronto Rock">Toronto Rock</option>
-          </select>
+          </select><br>
 
           <label for="finalist2">Select the West Conference Champions:</label>
           <select id="finalist2" name="finalist2">
@@ -261,7 +299,7 @@
             <option value="San Diego Seals">San Diego Seals</option>
             <option value="Saskatchewan Rush">Saskatchewan Rush</option>
             <option value="Vancouver Warriors">Vancouver Warriors</option>
-          </select>
+          </select><br>
         </div>
         <div class="col-md-3">
           <h2>NLL Playoff Champions</h2>
@@ -283,27 +321,44 @@
             <option value="San Diego Seals">San Diego Seals</option>
             <option value="Saskatchewan Rush">Saskatchewan Rush</option>
             <option value="Vancouver Warriors">Vancouver Warriors</option>
-          </select>
+          </select><br>
+          <img src="../Images/NLL_logo.png" alt="NLL Logo" id="logoNLL"/>
         </div>
       </div>
       <div class="row">
-        <br><br>
-        <input type="submit" value="Submit">
-      </div>
-      <div class="row">
-        <h3>Playoff Schedule:</h3>
-
-        <p>First Round: Single Elimination (Weekend of May 5-7)</p>
-        <p>Conference Finals: Best-of-Three Series</p>
-        <p>NLL Finals:</p>
-        <ul>
-          <li>Game 1: Memorial Day Weekend</li>
-          <li>Game 2: Memorial Day Weekend</li>
-          <li>Game 3 (if necessary): Weekend of June 2-4</li>
-        </ul>
+        <div class="col-md-12">
+          <hr>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <input type="submit" value="Submit">
+          <br><br>
+        </div>
       </div>
     </form>
   </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Remember:</h4>
+      <p>
+        The playoffs are underway, and it's an exciting time for lacrosse fans! Whether you're a die-hard fan or just starting to get into the sport, make sure you stay up to date with the playoffs. Follow the games closely, keep track of the standings, and make sure to update your bracket accordingly. It's easy to get caught up in the excitement of the playoffs, but staying informed will help you make better predictions and enjoy the games even more.
+      </p>
+      <p>
+        Make sure to mark your calendars and stay tuned for updates and results!
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h4>Playoff Schedule:</h4>
+      <p>First Round: Single Elimination (Weekend of May 5-7)</p>
+      <p>Conference Finals: Best-of-Three Series</p>
+      <p>NLL Finals:</p>
+      <ul>
+        <li>Game 1: Memorial Day Weekend</li>
+        <li>Game 2: Memorial Day Weekend</li>
+        <li>Game 3 (if necessary): Weekend of June 2-4</li>
+      </ul>
+    </div>
+  </div>
+  <br>
 </div>
 </body>
 </html>
