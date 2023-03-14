@@ -1,5 +1,5 @@
-/*Teams*/
-/*Website and Socials button size*/
+
+/*Media Query to adjust Team social media buttons*/
 a span {
     font-size: 14px;
 }
@@ -20,6 +20,15 @@ a span {
     height: 540px;
 }
 
+/*Team Colors*/
 .panthers-primary {
     color: #582C84;
+}
+
+.buffalo-primary {
+    color: #F9671C;
+}
+
+.swarm-primary {
+    color: #FBB524;
 }
