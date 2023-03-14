@@ -1,46 +1,172 @@
+<!-- Page by Joel Vernon-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Panther City Lacrosse Club - NLL</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>NLL | Teams | Panther City Lacrosse Club | Info</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossorigin="anonymous">
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link href="../css/joel-vernon-styles.css" rel="stylesheet">
 </head>
+
 <body>
-	<!-- Navigation Start-->
-<nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="../index.html">National Lacrosse League</a>
+<!--Nav Bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand">
+            <span class="nav-full-text navbar-brand d-none d-sm-inline">National Lacrosse League</span>
+            <span class="nav-short-text navbar-brand d-sm-none d-inline">NLL</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../catalog.html" class="nav-link">Catalog</a>
+                <a href="../references.html" class="nav-link">References</a>
+                <a href="../SCHEDULE.html" class="nav-link">Schedule</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Teams</a>
+                    <div class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                        <a href="../EAST_TEAMS.html" class="dropdown-item">East Teams</a>
+                        <hr class="dropdown-divider">
+                        <a href="../WEST_TEAMS.html" class="dropdown-item">West Teams</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                    <div class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                        <a href="../MORE/BRACKETS.html" class="dropdown-item">Bracket Maker</a>
+                        <hr class="dropdown-divider">
+                        <a href="../MORE/HISTORY.html" class="dropdown-item">History</a>
+                        <hr class="dropdown-divider">
+                        <a href="../MORE/RULES.html" class="dropdown-item">Rules</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../catalog.html">Catalog</a></li>
-      <li><a href="../references.html">References</a></li>
-	  <li><a href="../SCHEDULE.html">Schedule</a></li>
-	  <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Teams
-        <span class="caret"></span></a>
-		<ul class="dropdown-menu">
-          <li><a href="../EAST_TEAMS.html">East</a></li>
-          <li><a href="../WEST_TEAMS.html">West</a></li>
-        </ul>
-	  <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
-        <span class="caret"></span></a>
-		<ul class="dropdown-menu">
-          <li><a href="../MORE/BRACKETS.html">Bracket Maker</a></li>
-          <li><a href="../MORE/HISTORY.html">History</a></li>
-	      <li><a href="../MORE/RULES.html">Rules</a></li>
-        </ul>
-    </ul>
-  </div>
 </nav>
-<!-- Navigation End-->
-<div class="container">
-  <p>THE Panther City Lacrosse Club</p>
-</div>
+
+<!-- Page Header -->
+<header class="bg-light text-dark text-center text-md-start">
+    <div class="container p-3">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <div class="pt-3 align-self-start">
+                <h1 class="display-2 mb-0">Panther City Lacrosse Club</h1>
+                <p class="mb-0 text-muted fs-5">7-5</p>
+                <p class="mb-0 text-muted fs-5">3<sup>rd</sup> West Conference</p>
+            </div>
+            <img class="img-fluid w-25 p-3 d-none d-sm-inline" src="../Images/panthercity.png" alt="Panther City Logo">
+        </div>
+    </div>
+</header>
+
+<!-- Social Media Buttons -->
+<section class="text-dark text-center bg-light">
+    <div class="container">
+        <div class="d-flex py-2 justify-content-center align-items-center">
+            <a href="https://www.panthercitylax.com/" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official website">
+                <span class="bi bi-globe2 pe-1"></span>
+                <p class="mb-0 d-none d-md-block">Official Website</p>
+            </a>
+            <a href="https://www.youtube.com/channel/UCTY55R2b2QsFvDdtnH3A87Q" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official YouTube channel">
+                <span class="bi bi-youtube pe-1"></span>
+                <p class="mb-0 d-none d-md-block">YouTube</p>
+            </a>
+            <a href="https://www.facebook.com/PantherCityLax" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Facebook page">
+                <span class="bi bi-facebook pe-1"></span>
+                <p class="mb-0 d-none d-md-block">Facebook</p>
+            </a>
+            <a href="https://www.instagram.com/panthercitylax/?hl=en" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Instagram">
+                <span class="bi bi-instagram pe-1"></span>
+                <p class="mb-0 d-none d-md-block">Instagram</p>
+            </a>
+            <a href="https://twitter.com/PantherCityLax" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Twitter">
+                <span class="bi bi-twitter pe-1"></span>
+                <p class="mb-0 d-none d-md-block">Twitter</p>
+            </a>
+            <a href="https://www.tiktok.com/@panthercitylax" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Tiktok">
+                <span class="bi bi-tiktok pe-1"></span>
+                <p class="mb-0 d-none d-md-block">Tiktok</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Slideshow For News and Highlights -->
+<section class="text-light bg-dark">
+    <div class="container p-3 text-center">
+        <div id="carouselHighlights" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item c-item active">
+                    <img src="../Images/joel-images/panthercity_lc_carousel_1.jpg" class="d-block w-100 c-img" alt="...">
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../Images/joel-images/panthercity_lc_carousel_2.jpg" class="d-block w-100 c-img" alt="...">
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../Images/joel-images/panthercity_lc_carousel_3.webp" class="d-block w-100 c-img" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHighlights" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHighlights" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Links to Team Pages -->
+<section class="text-dark bg-light text-center">
+    <div class="container-fluid px-5">
+        <div class="d-flex flex-column flex-sm-row py-5 justify-content-between align-items-center gap-2">
+            <a href="PANTHERCITY_LACROSSECLUB.html" class="btn  active btn-secondary border-1 rounded-0 text-nowrap w-100">Info</a>
+            <a href="rosters/panthercity-lc-roster.html" class="btn btn-secondary border-1 rounded-0 text-nowrap w-100">Roster</a>
+            <a href="../SCHEDULE.html" class="btn btn-secondary border-1 rounded-0 text-nowrap w-100">Schedule</a>
+        </div>
+    </div>
+</section>
+
+<!-- Team Info -->
+<section class="text-dark bg-light text-center">
+    <div class="container w-75">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1>The <span class="panthers-primary">Panthers</span> are on the Prowl</h1>
+            <p>Get ready to roar with excitement as the Panther City Lacrosse Club pounces onto the field! Established in 2020, they are a young team, but they are hungry for victory.
+                Based in Fort Worth, Texas, the Panther City Lacrosse Club is a proud expansion team that's ready to showcase the Lone Star State's passion for sports.
+                With a roster of talented players from around the world and a dedicated coaching staff, this club is poised to claw its way to the top of the league and give fans a thrilling new brand of lacrosse to cheer for.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous">
+</script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous">
+</script>
 </body>
 </html>
+
