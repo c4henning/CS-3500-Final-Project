@@ -1,0 +1,33 @@
+.catform {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  height: 60px;
+}
+.card {
+    border: 1px solid #e2e2e2;
+    background-color: #f8f9fa;
+    margin-bottom: 1rem;
+}
+.card-title {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+}
+.card-img {
+    width: 200px;
+    height: 200px;
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.card-text, .card-subtitle, .card-body a.btn {
+    margin: 0.5rem;
+}
+
+.catalogphoto{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	height: 50%;
