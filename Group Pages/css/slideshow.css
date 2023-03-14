@@ -39,3 +39,19 @@
         opacity:0;
     }
 }
+a{
+    color: silver;
+}
+img{
+    width: 350px;
+    height: 200px;
+    display: block;
+	margin-left: auto;
+	margin-right: auto;;
+}
+h1{
+    background-color: #343a40;
+    color: silver;
+    padding: 10px;
+    text-align:center;
+}
