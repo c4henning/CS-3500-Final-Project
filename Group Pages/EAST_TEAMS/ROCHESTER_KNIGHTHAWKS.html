@@ -5,59 +5,96 @@
   <title>Rochester Knighthawks - NLL</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../css/ChrisTeams.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="../css/page-style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </head>
-<body>
-	<!-- Navigation Start-->
-<nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="../index.html">National Lacrosse League</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../catalog.html">Catalog</a></li>
-      <li><a href="../references.html">References</a></li>
-	    <li><a href="../MORE/SCHEDULE.html">Schedule</a></li>
-	    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Teams
-          <span class="caret"></span>
-        </a>
-		    <ul class="dropdown-menu">
-          <li><a href="EAST_TEAMS.html">East</a></li>
-          <li><a href="../WEST_TEAMS/WEST_TEAMS.html">West</a></li>
-        </ul>
-	    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
-          <span class="caret"></span>
-        </a>
-		    <ul class="dropdown-menu">
-          <li><a href="../MORE/BRACKETS.html">Bracket Creator</a></li>
-          <li><a href="../MORE/HISTORY.html">History</a></li>
-	        <li><a href="../MORE/RULES.html">Rules</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!-- Navigation End-->
-<div class="container">
-  <!-- Header -->
-  <h1 id="title">
-    THE ROCHESTER KNIGHTHAWKS
-    <img src="../Images/rochester_knighthawks.png" id="logo" alt="Rochester Knighthawks logo">
-  </h1>
 
+<body>
+<!--Nav Bar-->
+<div id="nav"></div>
+
+<!-- Page Header -->
+<header class="bg-light text-dark text-center text-md-start">
+  <div class="container p-3">
+    <div class="d-md-flex justify-content-between align-items-center">
+      <div class="pt-3 align-self-start">
+        <h1 class="display-2 mb-0">Rochester Knighthawks</h1>
+        <h1 class="display-6 mb-0 text-muted">Rochester, New York</h1>
+        <p class="mb-0 text-muted fs-5">9 - 5</p>
+        <p class="mb-0 text-muted fs-5">3<sup>rd</sup> East Conference</p> <!--The first astrisk is a number, second is suffix and 3rd is east/west conference for their rank	EXAMPLE 1st East-->
+      </div>
+      <img class="img-fluid w-25 p-3 d-none d-sm-inline" src="/Images/rochester_knighthawks.png" alt="Knighthawks Logo"><!-- change alt and src -->
+    </div>
+  </div>
+</header>
+
+<!-- Social Media Buttons -->
+<section class="text-dark text-center bg-light">
+  <div class="container">
+    <div class="d-flex py-2 justify-content-center align-items-center">
+      <a href="https://rochesterknighthawks.com/" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official website"><!-- change link -->
+        <span class="bi bi-globe2 pe-1"></span>
+        <p class="mb-0 d-none d-md-block">Official Website</p>
+      </a>
+      <a href="https://www.youtube.com/channel/UC8I07oGq4C-Wh_zoajSSYqw" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official YouTube channel"> <!-- change link -->
+        <span class="bi bi-youtube pe-1"></span>
+        <p class="mb-0 d-none d-md-block">YouTube</p>
+      </a>
+      <a href="https://www.facebook.com/RocKnighthawks/" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Facebook page"> <!-- change link -->
+        <span class="bi bi-facebook pe-1"></span>
+        <p class="mb-0 d-none d-md-block">Facebook</p>
+      </a>
+      <a href="https://www.instagram.com/rocknighthawks/?hl=en" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Instagram"> <!-- change link -->
+        <span class="bi bi-instagram pe-1"></span>
+        <p class="mb-0 d-none d-md-block">Instagram</p>
+      </a>
+      <a href="https://twitter.com/RocKnighthawks" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Twitter"> <!-- change link -->
+        <span class="bi bi-twitter pe-1"></span>
+        <p class="mb-0 d-none d-md-block">Twitter</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Slideshow For News and Highlights -->
+<section class="text-light bg-dark">
+  <div class="container p-3 text-center">
+    <div id="carouselHighlights" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <!-- TODO: update images in carousel -->
+        <div class="carousel-item c-item active">
+          <img src="/Images/rochester_knighthawks_team.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+        </div>
+        <div class="carousel-item c-item">
+          <img src="/Images/rochester_knighthawks_team.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+        </div>
+        <div class="carousel-item c-item">
+          <img src="/Images/rochester_knighthawks_team.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHighlights" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHighlights" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+<div class="container">
   <div class="row">
     <!-- Team + Schedule -->
     <div class="col-md-9">
       <!-- Meet the team -->
-      <div class="jumbotron">
+      <div class="m-4 p-5 rounded bg-dark text-white">
         <h2>Meet The Team</h2>
-        <img src="../Images/rochester_knighthawks_team.jpg" alt="Knighthawks on the field" id="teamPhoto">
+        <img src="/Images/rochester_knighthawks_team.jpg" alt="Knighthawks on the field" id="teamPhoto">
         <br><br>
         <p>
           The Knighthawks were originally founded in 1995 and played in the NLL until 2019 when they were sold and moved to Halifax, Nova Scotia, becoming the Halifax Thunderbirds. However, the Knighthawks were re-established in 2020 as an expansion team and have since been playing in the league once again.
@@ -71,268 +108,88 @@
       </div>
 
       <!-- Schedule -->
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Team Schedule 2022/23</h2>
-          <table class="table table-border">
-            <thead>
-            <tr>
-              <th scope="col">Game</th>
-              <th scope="col">Week</th>
-              <th scope="col">Date</th>
-              <th scope="col">Day</th>
-              <th scope="col">Away</th>
-              <th scope="col">Home</th>
-              <th scope="col">Local</th>
-              <th scope="col">ET</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <th scope="row">5</th>
-              <td>1</td>
-              <td>Saturday</td>
-              <td>3-Dec-22</td>
-              <td>ROC</td>
-              <td>GA</td>
-              <td>8:00 PM</td>
-              <td>8:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">9</th>
-              <td>2</td>
-              <td>Saturday</td>
-              <td>10-Dec-22</td>
-              <td>TOR</td>
-              <td>ROC</td>
-              <td>7:00 PM</td>
-              <td>7:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">13</th>
-              <td>3</td>
-              <td>Saturday</td>
-              <td>17-Dec-22</td>
-              <td>ROC</td>
-              <td>ALB</td>
-              <td>7:00 PM</td>
-              <td>7:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">22</th>
-              <td>6</td>
-              <td>Saturday</td>
-              <td>7-Jan-23</td>
-              <td>PC</td>
-              <td>ROC</td>
-              <td>7:00 PM</td>
-              <td>7:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">35</th>
-              <td>7</td>
-              <td>Sunday</td>
-              <td>15-Jan-23</td>
-              <td>ROC</td>
-              <td>NY</td>
-              <td>3:00 PM</td>
-              <td>3:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">36</th>
-              <td>8</td>
-              <td>Friday</td>
-              <td>20-Jan-23</td>
-              <td>BUF</td>
-              <td>ROC</td>
-              <td>7:30 PM</td>
-              <td>7:30 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">40</th>
-              <td>9</td>
-              <td>Friday</td>
-              <td>27-Jan-23</td>
-              <td>ROC</td>
-              <td>HFX</td>
-              <td>7:00 PM</td>
-              <td>6:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">52</th>
-              <td>10</td>
-              <td>Saturday</td>
-              <td>4-Feb-23</td>
-              <td>ROC</td>
-              <td>BUF</td>
-              <td>7:30 PM</td>
-              <td>7:30 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">58</th>
-              <td>11</td>
-              <td>Saturday</td>
-              <td>11-Feb-23</td>
-              <td>HFX</td>
-              <td>ROC</td>
-              <td>7:00 PM</td>
-              <td>7:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">71</th>
-              <td>13</td>
-              <td>Saturday</td>
-              <td>25-Feb-23</td>
-              <td>NY</td>
-              <td>ROC</td>
-              <td>7:00 PM</td>
-              <td>7:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">76</th>
-              <td>14</td>
-              <td>Saturday</td>
-              <td>4-Mar-23</td>
-              <td>ROC</td>
-              <td>TOR</td>
-              <td>7:00 PM</td>
-              <td>7:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">86</th>
-              <td>15</td>
-              <td>Sunday</td>
-              <td>12-Mar-23</td>
-              <td>ROC</td>
-              <td>GA</td>
-              <td>4:00 PM</td>
-              <td>4:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">94</th>
-              <td>16</td>
-              <td>Sunday</td>
-              <td>19-Mar-23</td>
-              <td>PHI</td>
-              <td>ROC</td>
-              <td>3:00 PM</td>
-              <td>3:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">102</th>
-              <td>17</td>
-              <td>Saturday</td>
-              <td>25-Mar-23</td>
-              <td>ROC</td>
-              <td>LV</td>
-              <td>7:30 PM</td>
-              <td>10:30 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">110</th>
-              <td>18</td>
-              <td>Sunday</td>
-              <td>2-Apr-23</td>
-              <td>ROC</td>
-              <td>PHI</td>
-              <td>6:00 PM</td>
-              <td>6:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">112</th>
-              <td>19</td>
-              <td>Saturday</td>
-              <td>8-Apr-23</td>
-              <td>ALB</td>
-              <td>ROC</td>
-              <td>7:00 PM</td>
-              <td>7:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">125</th>
-              <td>21</td>
-              <td>Saturday</td>
-              <td>22-Apr-23</td>
-              <td>GA</td>
-              <td>ROC</td>
-              <td>7:00 PM</td>
-              <td>7:00 PM</td>
-            </tr>
-            <tr>
-              <th scope="row">132</th>
-              <td>22</td>
-              <td>Saturday</td>
-              <td>29-Apr-23</td>
-              <td>PHI</td>
-              <td>ROC</td>
-              <td>7:00 PM</td>
-              <td>7:00 PM</td>
-            </tr>
-            </tbody>
-          </table>
+        <div class="row p-1">
+            <div class="col-md-12">
+                <h2>Team Schedule 2022/23</h2>
+                <div id="schedule">ROC</div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Roster Sidebar -->
     <div class="col-md-3">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Knighthawks roster</h3>
-        </div>
-        <div class="panel-body">
-          <ul class="list-group">
-            <li class="list-group-item-heading">Forwards</li>
-              <li class="list-group-item">#5 <img src="../Images/canada.png" title="Canada" alt="Canada"> Turner Evans</li>
-              <li class="list-group-item">#7 <img src="../Images/canada.png" title="Canada" alt="Canada"> Thomas Vela</li>
-              <li class="list-group-item">#9 <img src="../Images/canada.png" title="Canada" alt="Canada"> Curtis Knight (Alt. Capt.)</li>
-              <li class="list-group-item">#10 <img src="../Images/USA.png" title="USA" alt="USA"> Connor Fields</li>
-              <li class="list-group-item">#18 <img src="../Images/canada.png" title="Canada" alt="Canada"> Austin Hasen</li>
-              <li class="list-group-item">#19 <img src="../Images/canada.png" title="Canada" alt="Canada"> Holden Cattoni</li>
-              <li class="list-group-item">#43 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ryan Smith</li>
-              <li class="list-group-item">#91 <img src="../Images/canada.png" title="Canada" alt="Canada"> Thomas Hoggarth</li>
+      <div class="card m-4">
+			<div class="card-header">
+			  <h5>Knighthawks roster</h5>
+			</div>
+			<div>
+			  <ul class="list-group list-group-flush">
+				  <li class="list-group-item" style= "background-color:gray">Forwards</li>
+				  <li class="list-group-item">#5 <img src="../Images/canada.png" title="Canada" alt="Canada"> Turner Evans</li>
+				  <li class="list-group-item">#7 <img src="../Images/canada.png" title="Canada" alt="Canada"> Thomas Vela</li>
+				  <li class="list-group-item">#9 <img src="../Images/canada.png" title="Canada" alt="Canada"> Curtis Knight (Alt. Capt.)</li>
+				  <li class="list-group-item">#10 <img src="../Images/USA.png" title="USA" alt="USA"> Connor Fields</li>
+				  <li class="list-group-item">#18 <img src="../Images/canada.png" title="Canada" alt="Canada"> Austin Hasen</li>
+				  <li class="list-group-item">#19 <img src="../Images/canada.png" title="Canada" alt="Canada"> Holden Cattoni</li>
+				  <li class="list-group-item">#43 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ryan Smith</li>
+				  <li class="list-group-item">#91 <img src="../Images/canada.png" title="Canada" alt="Canada"> Thomas Hoggarth</li>
 
-            <li class="list-group-item-heading">Transition</li>
-              <li class="list-group-item">#17 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ryland Rees</li>
-              <li class="list-group-item">#67 <img src="../Images/canada.png" title="Canada" alt="Canada"> Jordan Stouros</li>
-              <li class="list-group-item">#81 <img src="../Images/canada.png" title="Canada" alt="Canada"> Matt Gilray</li>
+				  <li class="list-group-item " style= "background-color:gray">Transition</li>
+				  <li class="list-group-item">#17 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ryland Rees</li>
+				  <li class="list-group-item">#67 <img src="../Images/canada.png" title="Canada" alt="Canada"> Jordan Stouros</li>
+				  <li class="list-group-item">#81 <img src="../Images/canada.png" title="Canada" alt="Canada"> Matt Gilray</li>
 
-            <li class="list-group-item-heading">Defensemen</li>
-              <li class="list-group-item">#2 <img src="../Images/canada.png" title="Canada" alt="Canada"> Paul Dawson (Captain)</li>
-              <li class="list-group-item">#4 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ethan Schott</li>
-              <li class="list-group-item">#6 <img src="../Images/canada.png" title="Canada" alt="Canada"> Brad Gillies</li>
-              <li class="list-group-item">#8 <img src="../Images/canada.png" title="Canada" alt="Canada"> Mitch Ogilvie</li>
-              <li class="list-group-item">#15 <img src="../Images/canada.png" title="Canada" alt="Canada"> Matt Bennett</li>
-              <li class="list-group-item">#23 <img src="../Images/canada.png" title="Canada" alt="Canada"> Curtis Romanchych</li>
-              <li class="list-group-item">#27 <img src="../Images/canada.png" title="Canada" alt="Canada"> Tyler Halls</li>
-              <li class="list-group-item">#29 <img src="../Images/canada.png" title="Canada" alt="Canada"> Tyler Biles</li>
+				  <li class="list-group-item " style= "background-color:gray">Defensemen</li>
+				  <li class="list-group-item">#2 <img src="../Images/canada.png" title="Canada" alt="Canada"> Paul Dawson (Captain)</li>
+				  <li class="list-group-item">#4 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ethan Schott</li>
+				  <li class="list-group-item">#6 <img src="../Images/canada.png" title="Canada" alt="Canada"> Brad Gillies</li>
+				  <li class="list-group-item">#8 <img src="../Images/canada.png" title="Canada" alt="Canada"> Mitch Ogilvie</li>
+				  <li class="list-group-item">#15 <img src="../Images/canada.png" title="Canada" alt="Canada"> Matt Bennett</li>
+				  <li class="list-group-item">#23 <img src="../Images/canada.png" title="Canada" alt="Canada"> Curtis Romanchych</li>
+				  <li class="list-group-item">#27 <img src="../Images/canada.png" title="Canada" alt="Canada"> Tyler Halls</li>
+				  <li class="list-group-item">#29 <img src="../Images/canada.png" title="Canada" alt="Canada"> Tyler Biles</li>
 
-            <li class="list-group-item-heading">Goaltenders</li>
-              <li class="list-group-item">#49 <img src="../Images/canada.png" title="Canada" alt="Canada"> Rylan Hartley</li>
-              <li class="list-group-item">#1 <img src="../Images/canada.png" title="Canada" alt="Canada"> Riley Hutchcraft</li>
+				  <li class="list-group-item" style= "background-color:gray">Goaltenders</li>
+				  <li class="list-group-item">#49 <img src="../Images/canada.png" title="Canada" alt="Canada"> Rylan Hartley</li>
+				  <li class="list-group-item">#1 <img src="../Images/canada.png" title="Canada" alt="Canada"> Riley Hutchcraft</li>
 
-            <li class="list-group-item-heading">Practice Squad</li>
-              <li class="list-group-item">#25 <img src="../Images/canada.png" title="Canada" alt="Canada"> Parker Pipher (T)</li>
-              <li class="list-group-item">#71 <img src="../Images/canada.png" title="Canada" alt="Canada"> Jeff Wittig (F)</li>
-              <li class="list-group-item">#93 <img src="../Images/canada.png" title="Canada" alt="Canada"> Pent Eistrat (F)</li>
+				  <li class="list-group-item " style= "background-color:gray">Practice Squad</li>
+				  <li class="list-group-item">#25 <img src="../Images/canada.png" title="Canada" alt="Canada"> Parker Pipher (T)</li>
+				  <li class="list-group-item">#71 <img src="../Images/canada.png" title="Canada" alt="Canada"> Jeff Wittig (F)</li>
+				  <li class="list-group-item">#93 <img src="../Images/canada.png" title="Canada" alt="Canada"> Pent Eistrat (F)</li>
 
-            <li class="list-group-item-heading">Injured Reserve</li>
-              <li class="list-group-item">#37 <img src="../Images/canada.png" title="Canada" alt="Canada"> Dan Coates (D)</li>
-              <li class="list-group-item">#96 <img src="../Images/canada.png" title="Canada" alt="Canada"> Cory Highfield (T)</li>
+				  <li class="list-group-item" style= "background-color:gray">Injured Reserve</li>
+				  <li class="list-group-item">#37 <img src="../Images/canada.png" title="Canada" alt="Canada"> Dan Coates (D)</li>
+				  <li class="list-group-item">#96 <img src="../Images/canada.png" title="Canada" alt="Canada"> Cory Highfield (T)</li>
 
-            <li class="list-group-item-heading">Unable to play</li>
-              <li class="list-group-item">#3 <img src="../Images/canada.png" title="Canada" alt="Canada"> Thomas Whitty (T)</li>
-              <li class="list-group-item">#52 <img src="../Images/canada.png" title="Canada" alt="Canada"> Carter Schott (T)</li>
-            
-            <li class="list-group-item-heading">Coaches</li>
-              <li class="list-group-item">Mike Hasen (Head)</li>
-              <li class="list-group-item">Gavin Prout</li>
-              <li class="list-group-item">Pat O'Toole</li>
-          </ul>
-        </div>
+				  <li class="list-group-item" style= "background-color:gray">Unable to play</li>
+				  <li class="list-group-item">#3 <img src="../Images/canada.png" title="Canada" alt="Canada"> Thomas Whitty (T)</li>
+				  <li class="list-group-item">#52 <img src="../Images/canada.png" title="Canada" alt="Canada"> Carter Schott (T)</li>
+
+				  <li class="list-group-item " style= "background-color:gray">Coaches</li>
+				  <li class="list-group-item">Mike Hasen (Head)</li>
+				  <li class="list-group-item">Gavin Prout</li>
+				  <li class="list-group-item rounded">Pat O'Toole</li>
+			  </ul>
+			</div>
       </div>
     </div>
   </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous">
+</script>
 </body>
+<footer>
+  <!-- include the footer.html file -->
+  <div id="footer"></div>
+<script>
+  $(function(){
+    $("#nav").load("/partials/nav.html");
+    $("#footer").load("/partials/footer.html");
+  });
+</script>
+<script src="../js/team_schedule_generator.js"></script>
+</footer>
 </html>
