@@ -1,270 +1,114 @@
+<!-- Page by Jaiden Anders-->
 <!DOCTYPE html>
-<!-- Page by Jaiden Andedrs-->
-
-<html>
+<html lang="en">
 <head>
-<!-- Navigation Start-->
   <title>Albany Firewolves - NLL</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../css/JaidenTeams.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="../css/page-style.css" rel="stylesheet">
 </head>
+
 <body>
-<nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="../index.html">National Lacrosse League</a>
+<!--Nav Bar-->
+<div id="nav"></div>
+
+<!-- Page Header -->
+<header class="bg-light text-dark text-center text-md-start">
+  <div class="container p-3">
+    <div class="d-md-flex justify-content-between align-items-center">
+      <div class="pt-3 align-self-start">
+        <h1 class="display-2 mb-0">Albany Firewolves</h1>
+	<h1 class="display-6 mb-0 text-muted">Albany, New York</h1>
+        <p class="mb-0 text-muted fs-5">2 - 11</p>
+        <p class="mb-0 text-muted fs-5">8<sup>th</sup> East Conference</p> <!--The first astrisk is a number, second is suffix and 3rd is east/west conference for their rank	EXAMPLE 1st East-->
+      </div>
+      <img class="img-fluid w-25 p-3 d-none d-sm-inline" src="../Images/albany_firewolves.png" alt="Bandits Logo"><!-- change alt and src -->
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../catalog.html">Catalog</a></li>
-      <li><a href="../references.html">References</a></li>
-	  <li><a href="../SCHEDULE.html">Schedule</a></li>
-	  <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Teams
-        <span class="caret"></span></a>
-		<ul class="dropdown-menu">
-          <li><a href="../EAST_TEAMS.html">East</a></li>
-          <li><a href="../WEST_TEAMS.html">West</a></li>
-        </ul>
-	  <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
-        <span class="caret"></span></a>
-		<ul class="dropdown-menu">
-          <li><a href="../MORE/BRACKETS.html">Bracket Creator</a></li>
-          <li><a href="../MORE/HISTORY.html">History</a></li>
-		  <li><a href="../MORE/RULES.html">Rules</a></li>
-        </ul>
-    </ul>
   </div>
-</nav>
-<!-- Navigation End-->
+</header>
 
+<!-- Social Media Buttons -->
+<section class="text-dark text-center bg-light">
+  <div class="container">
+    <div class="d-flex py-2 justify-content-center align-items-center">
+      <a href="https://albanyfirewolves.com/" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official website"><!-- change link -->
+        <span class="bi bi-globe2 pe-1"></span>
+        <p class="mb-0 d-none d-md-block">Official Website</p>
+      </a>
+      <a href="https://www.facebook.com/AlbFireWolves" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Facebook page"> <!-- change link -->
+        <span class="bi bi-facebook pe-1"></span>
+        <p class="mb-0 d-none d-md-block">Facebook</p>
+      </a>
+      <a href="https://www.instagram.com/AlbFireWolves/" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Instagram"> <!-- change link -->
+        <span class="bi bi-instagram pe-1"></span>
+        <p class="mb-0 d-none d-md-block">Instagram</p>
+      </a>
+      <a href="https://twitter.com/albfirewolves/" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Twitter"> <!-- change link -->
+        <span class="bi bi-twitter pe-1"></span>
+        <p class="mb-0 d-none d-md-block">Twitter</p>
+      </a>
+      <a href="https://www.tiktok.com/@albfirewolves" class="d-flex align-content-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Tiktok"> <!-- change link -->
+        <span class="bi bi-tiktok pe-1"></span>
+        <p class="mb-0 d-none d-md-block">Tiktok</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Slideshow For News and Highlights -->
+<section class="text-light bg-dark">
+  <div class="container p-3 text-center">
+    <div id="carouselHighlights" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item c-item active">
+          <img src="../Images/jaiden-images/carousel_img1.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+        </div>
+        <div class="carousel-item c-item">
+          <img src="../Images/jaiden-images/carousel_img2.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+        </div>
+        <div class="carousel-item c-item">
+          <img src="../Images/jaiden-images/carousel_img3.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHighlights" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHighlights" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
 <div class="container">
-	<h1 style="text-align:center;font-size:325%;">The Albany Firewolves</h1>
-	<div style="text-align:center;">
-		<img src="../Images/albany_firewolves.png" width="55%" height="55%"/>
-	</div>
-	<div style="margin-top:1.5em;margin-bottom:2.5em;">
-		<p style="font-size:135%;">The Albany Firewolves are another National Lacrosse League team based in the US State of New York. This team however isn't based in New York City but rather the capital of the state Albany. </p>
-	</div>
-	
-	<h2 style="text-align:center;margin-top:2em;">Albany Firewolves Roster</h2>
-  <div style="text-align:center;">
-	  <table class="table JaidenTable DataStyle" style="display:inline-table;" >
-			<tbody>
-				<tr>
-					 
-					 <td>Name</td>
-					 <td>Country</td>
-					 <td>Jersey</td>
-					 <td>Height</td>
-					 <td>Weight</td>
-					 <td>Age</td>
-					 <td>Position</td>
-					 
-				</tr>
-				
-				<tr>
-				 <td>Mike Byrne</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#27</td>
-				 <td >5'11</td>
-				 <td >180</td>
-				 <td>25</td>
-				 <td>Defenseman</td>
-				</tr>
-				</tr>
-				<tr>
-				 <td>Greg Downing</td>
-				 <td><img src="../Images/USA.png" width="50" height="30"/> </td>
-				 <td>#8</td>
-				 <td >6'1</td>
-				 <td >185</td>
-				 <td>37</td>
-				 <td>Defenseman</td>
-				</tr>
-				<tr>
-				 <td>Aaron Forster</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#73</td>
-				 <td >5'0</td>
-				 <td >165</td>
-				 <td>27</td>
-				 <td>Transition</td>
-				</tr>
-				<tr>
-				 <td>Jake Fox</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#51</td>
-				 <td >6'2</td>
-				 <td >200</td>
-				 <td>26</td>
-				 <td>Forward</td>
-				</tr>
-				<tr>
-				 <td>Justin Geddie</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#76</td>
-				 <td >6'4</td>
-				 <td >220</td>
-				 <td>21</td>
-				 <td>Goaltender</td>
-				</tr>
-				<tr>
-				 <td>Doug  Jamieson</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#30</td>
-				 <td >6'3</td>
-				 <td >275</td>
-				 <td>26</td>
-				 <td>Goaltender</td>
-				</tr>
-				<tr>
-				 <td>Patrick Kaschalk</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#19</td>
-				 <td >6'0</td>
-				 <td >200</td>
-				 <td>25</td>
-				 <td>Defenseman</td>
-				</tr>
-				<tr>
-				 <td>Connor Kelly</td>
-				 <td><img src="../Images/USA.png" width="50" height="30"/> </td>
-				 <td>#40</td>
-				 <td >6'0</td>
-				 <td >196</td>
-				 <td>27</td>
-				 <td>Forward</td>
-				</tr>
-				<tr>
-				 <td>John LaFontaine</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#33</td>
-				 <td >6'1</td>
-				 <td >215</td>
-				 <td>32</td>
-				 <td>Transition</td>
-				</tr>
-				<tr>
-				 <td>Ty Logan</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#18</td>
-				 <td >5'11</td>
-				 <td >195</td>
-				 <td>26</td>
-				 <td>Defenseman</td>
-				</tr>
-				<tr>
-				 <td>Brett Manney</td>
-				 <td><img src="../Images/USA.png" width="50" height="30"/> </td>
-				 <td>#13</td>
-				 <td >6'3</td>
-				 <td>220</td>
-				 <td>37</td>
-				 <td>Defenseman</td>
-				</tr>
-				<tr>
-				 <td>Kieran Mcardle</td>
-				 <td><img src="../Images/USA.png" width="50" height="30"/> </td>
-				 <td>#66</td>
-				 <td >6'1</td>
-				 <td >181</td>
-				 <td>30</td>
-				 <td>Forward</td>
-				</tr>
-				<tr>
-				 <td>Brent Mitchell</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#21</td>
-				 <td >6'2</td>
-				 <td >222</td>
-				 <td>24</td>
-				 <td>Defenseman</td>
-				</tr>
-				<tr>
-				 <td>Jackson Mishimura</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#11</td>
-				 <td >6'1</td>
-				 <td >162</td>
-				 <td>25</td>
-				 <td>Defenseman</td>
-				</tr>
-				<tr>
-				 <td>John Piatelli</td>
-				 <td><img src="../Images/USA.png" width="50" height="30"/> </td>
-				 <td>#42</td>
-				 <td >6'0</td>
-				 <td >195</td>
-				 <td>24</td>
-				 <td>Forward</td>
-				</tr>
-				<tr>
-				 <td>Leo Stouros</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#20</td>
-				 <td >6'1</td>
-				 <td >185</td>
-				 <td>28</td>
-				 <td>Defenseman</td>
-				</tr>
-				<tr>
-				 <td>Hiana Thompson</td>
-				 <td><img src="../Images/USA.png" width="50" height="30"/> </td>
-				 <td>#22</td>
-				 <td >5'11</td>
-				 <td >195</td>
-				 <td>34</td>
-				 <td>Forward</td>
-				</tr>
-				<tr>
-				 <td>Tanner Thomson</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#44</td>
-				 <td >5'10</td>
-				 <td >170</td>
-				 <td>27</td>
-				 <td>Forward</td>
-				</tr>
-				<tr>
-				 <td>Zac Tucci</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#9</td>
-				 <td >6'1</td>
-				 <td >195</td>
-				 <td>23</td>
-				 <td>Forward</td>
-				</tr>
-				<tr>
-				 <td>Thomas Vaesen</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#27</td>
-				 <td >6'0</td>
-				 <td >185</td>
-				 <td>24</td>
-				 <td>Forward</td>
-				</tr>
-				<tr>
-				 <td>Colton Watkinson</td>
-				 <td><img src="../Images/Canada.png" width="50" height="30"/> </td>
-				 <td>#17</td>
-				 <td >6'4</td>
-				 <td >195</td>
-				 <td>29</td>
-				 <td>Transition</td>
-				</tr>
+  <div class="row">
+    <!-- Team + Schedule -->
+    <div class="col-md-9">
+      <!-- Meet the team -->
+      <div class="m-4 p-5 rounded bg-dark text-white">
+        <h2>Meet The Team</h2>
+        <img src="../Images/jaiden-images/albany_firewolves_team.jpg" alt="Albany" id="teamPhoto">
+        <br><br>
+        <p>
+          The Albany Firewolves are a professional lacrosse team based in Albany, New York. The team was originally the New England Black Wolves. The Black Wolves was originally a relocation of The Philadelphia Wings but the Philadelphia Wings have since reentered the National Lacrosse League.
+        </p>
+        <p>
+          The Albany Firewolves have officailly started playing in the National Lacrosse League in the 2021-2022 season. They started their first season off strong with a respectable 9-9 record. This record led them to the Quarterfinals of the National Lacrosse League where they lost to the Buffalo Bandits 5 - 10.
+        </p>
+        <p>
+          Although the team has started off struggling this season, you must remember that they are a new team. Coming into this season they got two high overall draft picks that they are trying to incorporate into their team. This young team has potential to go to the moon.
+        </p>
+      </div>
 
-			</tbody>
-		</table>
-	</div>
-	<div class="row">
+      <!-- Schedule -->
+      <div class="row p-1">
         <div class="col-md-12">
-			<h2>Team Schedule 2022/23</h2>
+          <h2>Team Schedule 2022/23</h2>
 			<table class="table table-border JaidenTable">
 			<thead>
 				<tr>
@@ -443,7 +287,77 @@
             </tbody>
           </table>
         </div>
-</div>
-</body>
-</html>
+      </div>
+    </div>
 
+    <div class="col-md-3">
+      <div class="card m-4">
+			<div class="card-header">
+			  <h5>Knighthawks roster</h5>
+			</div>
+			<div>
+			  <ul class="list-group list-group-flush">
+				  <li class="list-group-item" style= "background-color:gray">Forwards</li>
+				  <li class="list-group-item">#7 <img src="../Images/canada.png" title="canada" alt="canada"> Jackson Reid </li>
+				  <li class="list-group-item">#8 <img src="../Images/canada.png" title="canada" alt="canada"> Marshall Powless </li>
+				  <li class="list-group-item">#22 <img src="../Images/USA.png" title="USA" alt="USA"> Hiana Thompson</li>
+				  <li class="list-group-item">#40 <img src="../Images/USA.png" title="USA" alt="USA"> Connor Kelly</li>
+				  <li class="list-group-item">#41 <img src="../Images/USA.png" title="USA" alt="USA"> John Piatelli</li>
+				  <li class="list-group-item">#44 <img src="../Images/canada.png" title="Canada" alt="Canada"> Tanner Thomson</li>
+				  <li class="list-group-item">#51 <img src="../Images/canada.png" title="canada" alt="canada"> Jake Fox</li>
+				  <li class="list-group-item">#57 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ethan Walker</li>
+
+				  <li class="list-group-item " style= "background-color:gray">Transition</li>
+				  <li class="list-group-item">#33 <img src="../Images/canada.png" title="Canada" alt="Canada"> John LaFontaine</li>
+				  <li class="list-group-item">#73 <img src="../Images/canada.png" title="Canada" alt="Canada"> Aaron Forster</li>
+				  <li class="list-group-item">#17 <img src="../Images/canada.png" title="Canada" alt="Canada"> Colton Watkinson</li>
+
+				  <li class="list-group-item " style= "background-color:gray">Defensemen</li>
+				  <li class="list-group-item">#8 <img src="../Images/USA.png" title="USA" alt="USA"> Greg Downing</li>
+				  <li class="list-group-item">#13 <img src="../Images/USA.png" title="USA" alt="USA"> Bret Manney(Captain)</li>
+				  <li class="list-group-item">#18 <img src="../Images/USA.png" title="USA" alt="USA"> Ty Logan</li>
+				  <li class="list-group-item">#19 <img src="../Images/canada.png" title="Canada" alt="Canada"> Patrick Kaschalk</li>
+				  <li class="list-group-item">#20 <img src="../Images/canada.png" title="Canada" alt="Canada"> Leo Stouros</li>
+				  <li class="list-group-item">#21 <img src="../Images/canada.png" title="Canada" alt="Canada"> Brent Mitchell</li>
+				  <li class="list-group-item">#27 <img src="../Images/canada.png" title="Canada" alt="Canada"> Mike Byrne</li>
+				  <li class="list-group-item">#77 <img src="../Images/canada.png" title="Canada" alt="Canada"> Nick Chaykowsky</li>
+
+				  <li class="list-group-item" style= "background-color:gray">Goaltenders</li>
+				  <li class="list-group-item">#30 <img src="../Images/canada.png" title="Canada" alt="Canada"> Doug Jamieson</li>
+				  <li class="list-group-item">#76 <img src="../Images/canada.png" title="Canada" alt="Canada"> Justin Geddie</li>
+
+				  <li class="list-group-item " style= "background-color:gray">Coaches</li>
+				  <li class="list-group-item">Glenn Clark (Head)</li>
+				  <li class="list-group-item">Clem D'Orazio</li>
+				  <li class="list-group-item rounded">Darryl Gibson</li>
+				  
+				  <li class="list-group-item" style= "background-color:gray">Inactive Players</li>
+				  <li class="list-group-item">#6 <img src="../Images/USA.png" title="USA" alt="USA"> Charlie Kitchen (F)</li>
+				  <li class="list-group-item">#11 <img src="../Images/canada.png" title="Canada" alt="Canada"> Jackson Nishimura (D)</li>
+				  <li class="list-group-item">#16 <img src="../Images/canada.png" title="Canada" alt="Canada"> Justin Scott (F)</li>
+				  <li class="list-group-item">#66 <img src="../Images/canada.png" title="Canada" alt="Canada"> Keiran McArdle (F)</li>
+				  <li class="list-group-item">#88 <img src="../Images/canada.png" title="Canada" alt="Canada"> Corson Kealey (F)</li>
+				  <li class="list-group-item">#91 <img src="../Images/canada.png" title="Canada" alt="Canada"> Joe Nardella (D)</li>
+				  <li class="list-group-item">#  <img src="../Images/canada.png" title="Canada" alt="Canada"> Travis Longboat (F)</li>
+			  </ul>
+			</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous">
+</script>
+</body>
+<footer>
+  <!-- include the footer.html file -->
+  <div id="footer"></div>
+</footer>
+<script>
+  $(function(){
+    $("#nav").load("/partials/nav.html");
+    $("#footer").load("/partials/footer.html");
+  });
+</script>
+</html>

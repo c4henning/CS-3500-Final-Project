@@ -1,0 +1,59 @@
+
+/*Media Query to adjust Team social media buttons*/
+a span {
+    font-size: 14px;
+}
+
+@media (576px <= width < 768px) {
+    a span {
+        font-size: 2em;
+    }
+}
+
+/*Carousel Styling*/
+.c-img {
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.c-item {
+    height: 540px;
+}
+
+/*Team Colors*/
+.panthers-primary {
+    color: #582C84;
+}
+
+.buffalo-primary {
+    color: #F9671C;
+}
+
+.swarm-primary {
+    color: #FBB524;
+}
+
+#title {
+    text-align: center;
+}
+#logo {
+    width: 2em
+}
+#teamPhoto {
+    border-radius: 3px;
+    width: 100%
+}
+tr:nth-child(even), .list-group-item:nth-child(even) {
+    background-color: #f2f2f2;
+}
+table tr:hover {
+    background-color: #d0d0ce;
+}
+.list-group-item-heading {
+    margin-top: 0.5em;
+}
+.list-group-item img {
+    height: 1em;
+    width: auto;
+}
+
