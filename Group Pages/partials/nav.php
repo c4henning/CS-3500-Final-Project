@@ -4,11 +4,11 @@ $base_url = '';
 if ($_SERVER['HTTP_HOST'] == 'c4henning.github.io') {
   $base_url = 'https://c4henning.github.io/CS-3500-Final-Project/Group%20Pages';
 } else {
-  $base_url = 'https://' . $_SERVER['HTTP_HOST'];
+  $base_url = 'http://' . $_SERVER['HTTP_HOST'];
 }
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
   <div class="container-fluid">
     <a href="<?php echo $base_url ?>/index.html" class="navbar-brand">
       <span class="nav-full-text navbar-brand d-none d-sm-inline">National Lacrosse League</span>
