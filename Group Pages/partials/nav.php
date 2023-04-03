@@ -39,7 +39,7 @@
 
 <?php
 // Dynamic switching of file paths between development and live site
-if ($_SERVER['HTTP_HOST'] == 'https://c4henning.github.io') {
+if ($_SERVER['HTTP_HOST'] == 'c4henning.github.io') {
   $base_url = 'https://c4henning.github.io/CS-3500-Final-Project/Group%20Pages';
 } else {
   $base_url = 'http://' . $_SERVER['HTTP_HOST'];
