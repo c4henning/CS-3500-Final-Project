@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link href="/css/page-style.css" rel="stylesheet">
+  <link href="../css/page-style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         <p class="mb-0 text-muted fs-5">9 - 5</p>
         <p class="mb-0 text-muted fs-5">3<sup>rd</sup> East Conference</p> <!--The first astrisk is a number, second is suffix and 3rd is east/west conference for their rank	EXAMPLE 1st East-->
       </div>
-      <img class="img-fluid w-25 p-3 d-none d-sm-inline" src="/Images/rochester_knighthawks.png" alt="Knighthawks Logo"><!-- change alt and src -->
+      <img class="img-fluid w-25 p-3 d-none d-sm-inline" src="../Images/rochester_knighthawks.png" alt="Knighthawks Logo"><!-- change alt and src -->
     </div>
   </div>
 </header>
@@ -64,13 +64,13 @@
       <div class="carousel-inner">
           <!-- TODO: update images in carousel -->
         <div class="carousel-item c-item active">
-          <img src="/Images/rochester_knighthawks_team.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+          <img src="../Images/rochester_knighthawks_team.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
         </div>
         <div class="carousel-item c-item">
-          <img src="/Images/rochester_knighthawks_team.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+          <img src="../Images/rochester_knighthawks_team.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
         </div>
         <div class="carousel-item c-item">
-          <img src="/Images/rochester_knighthawks_team.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+          <img src="../Images/rochester_knighthawks_team.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselHighlights" data-bs-slide="prev">
@@ -91,7 +91,7 @@
       <!-- Meet the team -->
       <div class="m-4 p-5 rounded bg-dark text-white">
         <h2>Meet The Team</h2>
-        <img src="/Images/rochester_knighthawks_team.jpg" alt="Knighthawks on the field" id="teamPhoto">
+        <img src="../Images/rochester_knighthawks_team.jpg" alt="Knighthawks on the field" id="teamPhoto">
         <br><br>
         <p>
           The Knighthawks were originally founded in 1995 and played in the NLL until 2019 when they were sold and moved to Halifax, Nova Scotia, becoming the Halifax Thunderbirds. However, the Knighthawks were re-established in 2020 as an expansion team and have since been playing in the league once again.
@@ -188,11 +188,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 
-  <script src="/js/team_schedule_generator.js"></script>
+  <script src="../js/team_schedule_generator.js"></script>
   <script>
       $(function() {
-          $("#footer").load("/partials/footer.html");
-          $("#nav").load("/partials/nav.html");
+          $("#footer").load("../partials/footer.html");
+          $("#nav").load("../partials/nav.php");
       });
   </script>
 </footer>
