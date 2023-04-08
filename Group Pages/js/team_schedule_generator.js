@@ -17,7 +17,7 @@ function generateTable(teamName) {
     const tableBody = document.createElement("tbody");
 
     // Uses Papa Parse to get CSV data
-    Papa.parse("/data/2022-23-NLL-Master-Schedule.csv", {
+    Papa.parse("../data/2022-23-NLL-Master-Schedule.csv", {
         download: true,
         header: true,
         delimiter: ",",
