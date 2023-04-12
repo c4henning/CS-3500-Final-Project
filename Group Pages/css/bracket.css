@@ -1,0 +1,49 @@
+#intro {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid #dee2e6;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+form {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1em;
+}
+#logoNLL {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-50%) translateY(225%);
+    height: auto;
+    width: 50%;
+}
+@media only screen and (max-width: 991px) {
+    .container img {
+        display: none;
+    }
+}
+.select-box-list {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.select-box {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+select {
+    width: 30ch;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}
