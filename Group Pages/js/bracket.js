@@ -1,22 +1,40 @@
+const teamNames = {
+    'ALB': 'Albany Firewolves',
+    'BUF': 'Buffalo Bandits',
+    'GA': 'Georgia Swarm',
+    'HFX': 'Halifax Thunderbirds',
+    'NY': 'New York Riptide',
+    'PHI': 'Philadelphia Wings',
+    'ROC': 'Rochester Knighthawks',
+    'TOR': 'Toronto Rock',
+    'CGY': 'Calgary Roughnecks',
+    'COL': 'Colorado Mammoth',
+    'LV': 'Las Vegas NLL',
+    'PC': 'Panther City Lacrosse',
+    'SD': 'San Diego Seals',
+    'SAS': 'Saskatchewan Rush',
+    'VAN': 'Vancouver Warriors'
+};
+
 const eastSeeds = [
-    "Albany Firewolves",
-    "Buffalo Bandits",
-    "Georgia Swarm",
-    "Halifax Thunderbirds",
-    "New York Riptide",
-    "Philadelphia Wings",
-    "Rochester Knighthawks",
-    "Toronto Rock"
+    'ALB',
+    'BUF',
+    'GA',
+    'HFX',
+    'NY',
+    'PHI',
+    'ROC',
+    'TOR'
 ];
 
 const westSeeds = [
-    "Calgary Roughnecks",
-    "Colorado Mammoth",
-    "Las Vegas Desert Dogs",
-    "Panther City Lacrosse Club",
-    "San Diego Seals",
-    "Saskatchewan Rush",
-    "Vancouver Warriors"
+    'CGY',
+    'COL',
+    'LV',
+    'PC',
+    'SD',
+    'SAS',
+    'VAN'
 ];
 
 const wildSeed = eastSeeds.concat(westSeeds).sort();
@@ -43,21 +61,21 @@ const $champion = $('#champion');
 
 // Populate the select elements with the eastSeeds options
 eastSeeds.forEach(seed => {
-    eastSeed1.append($('<option>', { value: seed, text: seed }));
-    eastSeed2.append($('<option>', { value: seed, text: seed }));
-    eastSeed3.append($('<option>', { value: seed, text: seed }));
-    eastSeed4.append($('<option>', { value: seed, text: seed }));
+    eastSeed1.append($('<option>', { value: seed, text: teamNames[seed] }));
+    eastSeed2.append($('<option>', { value: seed, text: teamNames[seed] }));
+    eastSeed3.append($('<option>', { value: seed, text: teamNames[seed] }));
+    eastSeed4.append($('<option>', { value: seed, text: teamNames[seed] }));
 });
 
 // Populate the select elements with the westSeeds options
 westSeeds.forEach(seed => {
-    westSeed1.append($('<option>', { value: seed, text: seed }));
-    westSeed2.append($('<option>', { value: seed, text: seed }));
-    westSeed3.append($('<option>', { value: seed, text: seed }));
+    westSeed1.append($('<option>', { value: seed, text: teamNames[seed] }));
+    westSeed2.append($('<option>', { value: seed, text: teamNames[seed] }));
+    westSeed3.append($('<option>', { value: seed, text: teamNames[seed] }));
 });
 
 wildSeed.forEach(seed => {
-    wildCard.append($('<option>', { value: seed, text: seed }));
+    wildCard.append($('<option>', { value: seed, text: teamNames[seed] }));
 });
 
 // Populate East Conference Finals dropdowns based on East Conference Semifinals dropdowns
@@ -70,7 +88,7 @@ $('#eastSeed1, #eastSeed4').change(function() {
         $eastSemifinal1.find('option').remove();
         $eastSemifinal1.append($('<option>', { value: '', text: 'Select a team' }));
         eastSemifinalists1.forEach(seed => {
-            $eastSemifinal1.append($('<option>', { value: seed, text: seed }));
+            $eastSemifinal1.append($('<option>', { value: seed, text: teamNames[seed] }));
         });
         $('#eastSemifinal1').prop('disabled', false);
     } else {
@@ -88,7 +106,7 @@ $('#eastSeed2, #eastSeed3').change(function() {
         $eastSemifinal2.find('option').remove();
         $eastSemifinal2.append($('<option>', { value: '', text: 'Select a team' }));
         eastSemifinalists1.forEach(seed => {
-            $eastSemifinal2.append($('<option>', { value: seed, text: seed }));
+            $eastSemifinal2.append($('<option>', { value: seed, text: teamNames[seed] }));
         });
         $('#eastSemifinal2').prop('disabled', false);
     } else {
@@ -108,7 +126,7 @@ $('#westSeed1, #wildCard').change(function() {
         $westSemifinal1.find('option').remove();
         $westSemifinal1.append($('<option>', { value: '', text: 'Select a team' }));
         westSemifinalists1.forEach(seed => {
-            $westSemifinal1.append($('<option>', { value: seed, text: seed }));
+            $westSemifinal1.append($('<option>', { value: seed, text: teamNames[seed] }));
         });
         $('#westSemifinal1').prop('disabled', false);
     } else {
@@ -126,7 +144,7 @@ $('#westSeed2, #westSeed3').change(function() {
         $westSemifinal2.find('option').remove();
         $westSemifinal2.append($('<option>', { value: '', text: 'Select a team' }));
         westSemifinalists1.forEach(seed => {
-            $westSemifinal2.append($('<option>', { value: seed, text: seed }));
+            $westSemifinal2.append($('<option>', { value: seed, text: teamNames[seed] }));
         });
         $('#westSemifinal2').prop('disabled', false);
     } else {
@@ -146,7 +164,7 @@ $('#eastSemifinal1, #eastSemifinal2').change(function() {
         $eastFinal.find('option').remove();
         $eastFinal.append($('<option>', { value: '', text: 'Select a team' }));
         eastFinalists.forEach(seed => {
-            $eastFinal.append($('<option>', { value: seed, text: seed }));
+            $eastFinal.append($('<option>', { value: seed, text: teamNames[seed] }));
         });
         $('#eastFinal').prop('disabled', false);
     } else {
@@ -164,7 +182,7 @@ $('#westSemifinal1, #westSemifinal2').change(function() {
         $westFinal.find('option').remove();
         $westFinal.append($('<option>', { value: '', text: 'Select a team' }));
         westFinalists.forEach(seed => {
-            $westFinal.append($('<option>', { value: seed, text: seed }));
+            $westFinal.append($('<option>', { value: seed, text: teamNames[seed] }));
         });
         $('#westFinal').prop('disabled', false);
     } else {
@@ -182,7 +200,7 @@ $('#eastFinal, #westFinal').change(function() {
         $champion.find('option').remove();
         $champion.append($('<option>', { value: '', text: 'Select a team' }));
         nllFinalists.forEach(seed => {
-            $champion.append($('<option>', { value: seed, text: seed }));
+            $champion.append($('<option>', { value: seed, text: teamNames[seed] }));
         });
         $('#champion').prop('disabled', false);
     } else {
