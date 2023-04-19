@@ -1,33 +1,46 @@
-.catform {
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  height: 60px;
-}
 .card {
     border: 1px solid #e2e2e2;
     background-color: #f8f9fa;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 .card-title {
     background-color: #343a40;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
 }
 .card-img {
     width: 200px;
     height: 200px;
     display: block;
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .card-text, .card-subtitle, .card-body a.btn {
     margin: 0.5rem;
 }
-
-.catalogphoto{
+.frame{
+	width:750px;
+	height:750px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 20%;
-	height: 50%;
+}
+.frame img{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	max-height: 70%;
+	max-width: 70%;	
+	}
+
+img {
+  width: 900px;
+  height: 900px;
+  object-fit: contain;
+}
+
+.dropdown {
+	font-size: 30px;
+}
+
