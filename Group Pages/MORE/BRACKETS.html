@@ -1,4 +1,3 @@
-<!-- Page by Christian Henning -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -212,29 +211,30 @@
     <!-- Info End -->
   </main>
 
-  <!-- Footer -->
+   
   <div id="footer-placeholder"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="../js/bracket.js"></script>
+	  <!-- popper.js MUST be included BEFORE bootstrap -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+			  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+			  crossorigin="anonymous">
+	  </script>
 
-  <script>
-      $(function() {
-          $.get("../partials/nav.php", function(data) {
-              $("#nav-placeholder").replaceWith(data);
-          });
-          $.get("../partials/footer.html", function(data) {
-              $("#footer-placeholder").replaceWith(data);
-          });
-      });
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 
-      $(function () {
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
 
-</div>
+	  <script>
+		$(function() {
+		  $.get("../partials/nav.php", function(data) {
+			$("#nav-placeholder").replaceWith(data);
+		  });
+		  $.get("../partials/footer.html", function(data) {
+			$("#footer-placeholder").replaceWith(data);
+		  });
+		});
+	  </script>
+	</div>
 </body>
 </html>
