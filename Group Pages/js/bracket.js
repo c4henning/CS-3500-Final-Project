@@ -9,8 +9,8 @@ const teamNames = {
     'TOR': 'Toronto Rock',
     'CGY': 'Calgary Roughnecks',
     'COL': 'Colorado Mammoth',
-    'LV': 'Las Vegas NLL',
-    'PC': 'Panther City Lacrosse',
+    'LV': 'Las Vegas Desert Dogs',
+    'PC': 'Panther City Lacrosse Club',
     'SD': 'San Diego Seals',
     'SAS': 'Saskatchewan Rush',
     'VAN': 'Vancouver Warriors'
@@ -220,3 +220,9 @@ $champion.change(function() {
         $('#submitPopover').popover('enable');
     }
 });
+
+// Clear form inputs when clear button is clicked
+$('#clearBtn').click(function() {
+    $('.select-box select').val('');
+});
+
