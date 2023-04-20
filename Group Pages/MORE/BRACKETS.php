@@ -269,6 +269,7 @@
 </div>
 <?php
 // Connect to the database
+// TODO: update $conn with new info for live site
 $conn = new PDO("mysql:host=localhost;dbname=NationalLacrosseLeague", "testuser");
 
 // Check if the form was submitted
@@ -277,15 +278,15 @@ if (isset($_POST['submit'])) {
   $name = $_POST['name'];
   $PIN = $_POST['PIN'];
 
-  // Check if the user exists in the users table
-  $stmt = $conn->prepare("SELECT * FROM users WHERE name = ?");
+  // Check if the user exists in the Users table
+  $stmt = $conn->prepare("SELECT * FROM Users WHERE name = ?");
   $stmt->execute([$name]);
 
   if ($stmt->rowCount() == 0) {
     // User does not exist, insert new user and selections
-    $stmt = $conn->prepare("INSERT INTO users (name, PIN) VALUES (?, ?)");
+    $stmt = $conn->prepare("INSERT INTO Users (name, PIN) VALUES (?, ?)");
     $stmt->execute([$name, $PIN]);
-    $stmt = $conn->prepare("INSERT INTO userbracket (name) VALUES (?)");
+    $stmt = $conn->prepare("INSERT INTO UserBrackets (name) VALUES (?)");
     $stmt->execute([$name]);
     echo "User and selections added successfully.";
   }
@@ -300,7 +301,7 @@ if (isset($_POST['submit'])) {
   // Insert selections
   foreach ($_POST as $key => $value) {
     if ($key != 'PIN' && $key != 'return' && $key != 'submit') {
-      $stmt = $conn->prepare("UPDATE userbracket SET `$key` = ? WHERE name = ?");
+      $stmt = $conn->prepare("UPDATE UserBrackets SET `$key` = ? WHERE name = ?");
       $stmt->execute([$value, $name]);
     }
   }
@@ -311,8 +312,8 @@ elseif (isset($_POST['retrieve'])) {
   $name = $_POST['name'];
   $PIN = $_POST['PIN'];
 
-  // Check if the user and PIN match in the users table
-  $stmt = $conn->prepare("SELECT * FROM users WHERE name = ? AND PIN = ?");
+  // Check if the user and PIN match in the Users table
+  $stmt = $conn->prepare("SELECT * FROM Users WHERE name = ? AND PIN = ?");
   $stmt->execute([$name, $PIN]);
 
   if ($stmt->rowCount() == 0) {
@@ -321,7 +322,7 @@ elseif (isset($_POST['retrieve'])) {
   }
   else {
     // User and PIN match, retrieve selections
-    $query = $conn->prepare("SELECT * FROM userbracket WHERE name = ?");
+    $query = $conn->prepare("SELECT * FROM UserBrackets WHERE name = ?");
     $query->execute([$name]);
     $row = $query->fetch(PDO::FETCH_ASSOC);
 
