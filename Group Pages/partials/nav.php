@@ -30,7 +30,7 @@ $base_url = 'http://' . $_SERVER['HTTP_HOST'];
         <div class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
           <div class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-            <a href="<?php echo $base_url ?>/MORE/BRACKETS.html" class="dropdown-item">Bracket Creator</a>
+            <a href="<?php echo $base_url ?>/MORE/BRACKETS.php" class="dropdown-item">Bracket Creator</a>
             <hr class="dropdown-divider">
             <a href="<?php echo $base_url ?>/MORE/HISTORY.html" class="dropdown-item">History</a>
             <hr class="dropdown-divider">
