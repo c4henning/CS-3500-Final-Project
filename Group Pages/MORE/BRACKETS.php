@@ -270,7 +270,7 @@
 <?php
 // Connect to the database
 // TODO: update $conn with new info for live site
-$conn = new PDO("mysql:host=localhost;dbname=NationalLacrosseLeague", "testuser");
+$conn = new PDO("mysql:host=localhost;dbname=NationalLacrosseLeague", "root");
 
 // Check if the form was submitted
 if (isset($_POST['submit'])) {
@@ -288,7 +288,7 @@ if (isset($_POST['submit'])) {
     $stmt->execute([$name, $PIN]);
     $stmt = $conn->prepare("INSERT INTO UserBrackets (name) VALUES (?)");
     $stmt->execute([$name]);
-    echo "User and selections added successfully.";
+    echo '<script>alert("User and selections added successfully.");</script>';
   }
   else {
     // User exists, check PIN
@@ -332,7 +332,7 @@ elseif (isset($_POST['retrieve'])) {
     }
     else {
       // Build the URL string
-      $url = 'http://' . $_SERVER['HTTP_HOST'] . '/BracketTest/BRACKETS.php?';
+      $url = 'http://' . $_SERVER['HTTP_HOST'] . '/MORE/BRACKETS.php?';
       foreach ($row as $key => $value) {
           $url .= $key . "=" . $value . "&";
       }
