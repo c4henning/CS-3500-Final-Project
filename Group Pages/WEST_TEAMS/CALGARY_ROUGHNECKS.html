@@ -1,3 +1,4 @@
+<!--Page By Robert McCollum-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,23 +9,197 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="../css/page-style.css" rel="stylesheet">
 </head>
+
 <body>
-	<!-- Navigation Start-->
+<div class="container-flex">
+  <!--Nav Bar-->
   <div id="nav-placeholder"></div>
-<!-- Navigation End-->
+  <!-- Main Content -->
+  <main class="overflow-hidden">
+    <!-- Page Header -->
+    <div class="row">
+      <header class="bg-light text-dark text-center text-md-start">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <div class="col-md-6 p-3 text-md-start text-center">
+            <h1 class="display-2">Calgary Roughnecks</h1>
+            <h2 class="display-6 text-muted">Calgary, Alberta</h2>
+            <p class="mb-0 text-muted fs-5">12 - 5</p>
+            <p class="mb-0 text-muted fs-5">2<sup>nd</sup> West Conference</p>
+          </div>
+          <div class="col-md-6 text-md-end text-center">
+            <img class="img-fluid w-50 p-3 d-none d-md-inline" src="../Images/calgary_roughnecks.png" alt="Roughnecks Logo">
+          </div>
+        </div>
+      </header>
+    </div>
 
-<div class="container">
-  <h1>THE CALGARY ROUGHNECKS</h1>
-  <figure>
-    <img src="../Images/calgary_roughnecks.png" alt="Roughnecks Logo" />
+    <!-- Social Media Buttons -->
+    <div class="row">
+      <section class="text-dark text-center bg-light">
+        <div class="d-flex py-2 justify-content-center align-items-center">
+          <a href="https://calgaryroughnecks.com/" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official website">
+            <span class="bi bi-globe2 pe-1"></span>
+            <p class="mb-0 d-none d-md-block">Official Website</p>
+          </a>
+          <a href="https://www.youtube.com/@calgaryroughnecks6754" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official YouTube channel">
+            <span class="bi bi-youtube pe-1"></span>
+            <p class="mb-0 d-none d-md-block">YouTube</p>
+          </a>
+          <a href="https://www.facebook.com/NLLRoughnecks/" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Facebook page">
+            <span class="bi bi-facebook pe-1"></span>
+            <p class="mb-0 d-none d-md-block">Facebook</p>
+          </a>
+          <a href="https://www.instagram.com/nllroughnecks" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Instagram">
+            <span class="bi bi-instagram pe-1"></span>
+            <p class="mb-0 d-none d-md-block">Instagram</p>
+          </a>
+          <a href="https://twitter.com/nllroughnecks" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Twitter">
+            <span class="bi bi-twitter pe-1"></span>
+            <p class="mb-0 d-none d-md-block">Twitter</p>
+          </a>
+          <a href="https://www.tiktok.com/@nllroughnecks" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official TikTok">
+            <span class="bi bi-tiktok pe-1"></span>
+            <p class="mb-0 d-none d-md-block">TikTok</p>
+          </a>
+        </div>
+      </section>
+    </div>
 
-  <h1>Who are the Roughnecks</h1>
-    <p>The Calgary Roughnecks are a professional box lacrosse team in the National Lacrosse League West and were founded in 2001. 
-      Located in WestJet Field in the Scotiabank Saddledome in Calgary, the Roughnecks got their name from 
-      the hardworking oil drillers found throughout Alberta. They've claimed the NLL Cup three times.</p>
-  </figure>
+    <!-- Slideshow Carousel -->
+    <div class="row">
+      <section class="text-light bg-dark">
+        <div id="carouselHighlights" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item c-item">
+              <img src="../Images/robert-images/Roughnecks-1-760x390.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="../Images/robert-images/Roughnecks-2.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+            <div class="carousel-item c-item">
+              <img src="../Images/robert-images/Roughnecks-3.jpg" class="d-block w-100 c-img" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHighlights" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHighlights" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
 
-<!--Schedule-->
+    <div class="row">
+      <!-- Team + Schedule -->
+      <div class="col-md-9">
+        <!-- Meet the team -->
+        <div class="m-4 p-5 rounded bg-dark text-white">
+          <h2>Meet The Team</h2>
+          <img src="../Images/calgary_roughnecks_photo.jpg" alt="Roughnecks Photo" id="teamPhoto" style="padding-bottom: 1rem">
+          <p>The Calgary Roughnecks are a professional box lacrosse team in the National Lacrosse League West and were founded in 2001.
+          Located in WestJet Field in the Scotiabank Saddledome in Calgary, the Roughnecks got their name from 
+          the hardworking oil drillers found throughout Alberta. They've claimed the NLL Cup three times.</p>
+        </div>
+
+        <!-- Schedule -->
+        <section>
+          <div class="row m-4">
+            <div class="col-md-12">
+              <h2>Team Schedule 2022/23</h2>
+              <div id="schedule">CAL</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Roster Sidebar -->
+      <div class="col-md-3">
+        <div class="card m-4">
+          <div class="card-header">
+            <h5>Roughnecks roster</h5>
+          </div>
+          <div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" style="background-color:gray">Forwards</li>
+              <li class="list-group-item">#12 <img src="../Images/canada.png" title="Canada" alt="Canada"> Tanner Cook</li>
+              <li class="list-group-item">#16 <img src="../Images/canada.png" title="Canada" alt="Canada"> Seth van Schepen</li>
+              <li class="list-group-item">#19 <img src="../Images/canada.png" title="Canada" alt="Canada"> Jesse King</li>
+              <li class="list-group-item">#21 <img src="../Images/canada.png" title="Canada" alt="Canada"> Kyle Waters</li>
+              <li class="list-group-item">#26 <img src="../Images/canada.png" title="Canada" alt="Canada"> Dan Tyler</li>
+              <li class="list-group-item">#68 <img src="../Images/canada.png" title="Canada" alt="Canada"> Tyler Pace</li>
+              <li class="list-group-item">#71 <img src="../Images/canada.png" title="Canada" alt="Canada"> Zach Herreweyers</li>
+              <li class="list-group-item">#97 <img src="../Images/canada.png" title="Canada" alt="Canada"> Haiden Dickinson</li>
+
+              <li class="list-group-item" style="background-color:gray">Transition</li>
+              <li class="list-group-item">#18 <img src="../Images/canada.png" title="Canada" alt="Canada"> Harrison Matsuoka</li>
+              <li class="list-group-item">#55 <img src="../Images/canada.png" title="Canada" alt="Canada"> Mitch Wilde</li>
+              <li class="list-group-item">#74 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ethan Ticehurst</li>
+              <li class="list-group-item">#77 <img src="../Images/canada.png" title="Canada" alt="Canada"> Zach Currier</li>
+
+              <li class="list-group-item" style="background-color:gray">Defensemen</li>
+              <li class="list-group-item">#2 <img src="../Images/canada.png" title="Canada" alt="Canada"> Reece Callies</li>
+              <li class="list-group-item">#3 <img src="../Images/canada.png" title="Canada" alt="Canada"> Jeff Cornwall</li>
+              <li class="list-group-item">#10 <img src="../Images/canada.png" title="Canada" alt="Canada"> Curtis Manning</li>
+              <li class="list-group-item">#13 <img src="../Images/canada.png" title="Canada" alt="Canada"> Eli Salama</li>
+              <li class="list-group-item">#22 <img src="../Images/canada.png" title="Canada" alt="Canada"> Shane Simpson</li>
+              <li class="list-group-item">#23 <img src="../Images/canada.png" title="Canada" alt="Canada"> Liam Leclair</li>
+
+              <li class="list-group-item" style="background-color:gray">Goaltenders</li>
+              <li class="list-group-item">#35 <img src="../Images/canada.png" title="Canada" alt="Canada"> Christian Del Bianco</li>
+              <li class="list-group-item">#45 <img src="../Images/canada.png" title="Canada" alt="Canada"> Adam Bland</li>
+
+              <li class="list-group-item" style="background-color:gray">Practice Squad</li>
+              <li class="list-group-item">#8 <img src="../Images/canada.png" title="Canada" alt="Canada"> Kieran McKay</li>
+              <li class="list-group-item">#27 <img src="../Images/canada.png" title="Canada" alt="Canada"> Dylan McIntosh</li>
+              <li class="list-group-item">#96 <img src="../Images/canada.png" title="Canada" alt="Canada"> Chris Willman</li>
+
+              <li class="list-group-item" style="background-color:gray">Injured Reserve</li>
+              <li class="list-group-item">#30 <img src="../Images/canada.png" title="Canada" alt="Canada"> Justin Ignacio</li>
+
+              <li class="list-group-item" style="background-color:gray">Coaches</li>
+              <li class="list-group-item">Curt Malawasky (Head)</li>
+              <li class="list-group-item">Bob McMahon</li>
+              <li class="list-group-item">Brian Beisel</li>
+              <li class="list-group-item rounded">Tyler Richards</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+</div>
+
+<!-- popper.js MUST be included BEFORE bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script src="../js/team_schedule_generator.js"></script>
+
+<script>
+$(function() {
+  $.get("../partials/nav.php", function(data) {
+    $("#nav-placeholder").replaceWith(data);
+  });
+  $.get("../partials/footer.html", function(data) {
+    $("#footer-placeholder").replaceWith(data);
+  });
+});
+</script>
+</body>
+</html>
+
+<!--
 <div class="row">
   <div class="col-md-12">
     <h1>Schedule</h1>
@@ -139,174 +314,4 @@
     </figure>
   </div>
 </div>
-
-<!--Roster-->
-<div class = "row">
-  <div class = "col-md-12">
-    <h1>Roster</h1>
-    <table class="table table-border">
-      <thead>
-        <tr>
-          <th>Player</th>
-          <th>Jersey</th>
-          <th>Position</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Reece Callies</td>
-          <td>2</td>
-          <td>Defense</td>
-        </tr>
-        <tr>
-          <td>Kieran McCay</td>
-          <td>8</td>
-          <td>Defense</td>
-        </tr>
-        <tr>
-          <td>Curtis Manning</td>
-          <td>10</td>
-          <td>Defense</td>
-        </tr>
-        <tr>
-          <td>Tanner Cook</td>
-          <td>12</td>
-          <td>Forward</td>
-        </tr>
-        <tr>
-          <td>Eli Salama</td>
-          <td>13</td>
-          <td>Defense</td>
-        </tr>
-        <tr>
-          <td>Seth van Schepen</td>
-          <td>16</td>
-          <td>Forward</td>
-        </tr>
-        <tr>
-          <td>Harrison Matsuoka</td>
-          <td>18</td>
-          <td>Transition</td>
-        </tr>
-        <tr>
-          <td>Jesse King</td>
-          <td>19</td>
-          <td>Forward</td>
-        </tr>
-        <tr>
-          <td>Kyle Waters</td>
-          <td>21</td>
-          <td>Forward</td>
-        </tr>
-        <tr>
-          <td>Shane Simpson</td>
-          <td>22</td>
-          <td>Defense</td>
-        </tr>
-        <tr>
-          <td>Liam Leclair</td>
-          <td>23</td>
-          <td>Defense</td>
-        </tr>
-        <tr>
-          <td>Dan Taylor</td>
-          <td>26</td>
-          <td>Forward</td>
-        </tr>
-        <tr>
-          <td>Josh Currier</td>
-          <td>27</td>
-          <td>Forward</td>
-        </tr>
-        <tr>
-          <td>Deacon Knott</td>
-          <td>30</td>
-          <td>Goalie</td>
-        </tr>
-        <tr>
-          <td>Christian del Bianco</td>
-          <td>35</td>
-          <td>Goalie</td>
-        </tr>
-        <tr>
-          <td>Adam Bland</td>
-          <td>45</td>
-          <td>Goalie</td>
-        </tr>
-        <tr>
-          <td>Mitch Wilde</td>
-          <td>55</td>
-          <td>Transition</td>
-        </tr>
-        <tr>
-          <td>Tyler Pace</td>
-          <td>68</td>
-          <td>Forward</td>
-        </tr>
-        <tr>
-          <td>Ethan Ticehurst</td>
-          <td>74</td>
-          <td>Defense</td>
-        </tr>
-        <tr>
-          <td>Zach Currier</td>
-          <td>77</td>
-          <td>Transition</td>
-        </tr>
-        <tr>
-          <td>Haiden Dickinson</td>
-          <td>97</td>
-          <td>Forward</td>
-        </tr>
-        <tr>
-          <td>Dylan McIntosh</td>
-          <td>27</td>
-          <td>Practice</td>
-        </tr>
-        <tr>
-          <td>Chris Willman</td>
-          <td>0</td>
-          <td>Practice</td>
-        </tr>
-        <tr>
-          <td>Zach Herreweyers</td>
-          <td>0</td>
-          <td>Practice</td>
-        </tr>
-        <tr>
-          <td>Justin Inacio</td>
-          <td>30</td>
-          <td>Defense</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-   
-  <div id="footer-placeholder"></div>
-
-	  <!-- popper.js MUST be included BEFORE bootstrap -->
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
-	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-			  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-			  crossorigin="anonymous">
-	  </script>
-
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-
-	  <script src="../js/team_schedule_generator.js"></script>
-	  <script>
-		$(function() {
-		  $.get("../partials/nav.php", function(data) {
-			$("#nav-placeholder").replaceWith(data);
-		  });
-		  $.get("../partials/footer.html", function(data) {
-			$("#footer-placeholder").replaceWith(data);
-		  });
-		});
-	  </script>
-	</div>
-</body>
-</html>
+-->
