@@ -1,3 +1,4 @@
+<!-- Page by Robert McCollum -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +9,207 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="../css/page-style.css" rel="stylesheet">
 </head>
-<body>
-  <div id="nav-placeholder"></div>
-<!-- Navigation End-->
 
-<div class="container">
-  <h1>THE PHILIDELPHIA WINGS</h1>
+<body>
+<div class="container-flex">
+  <!--Nav Bar-->
+  <div id="nav-placeholder"></div>
+  <!-- Main Content -->
+  <main class="overflow-hidden">
+    <!-- Page Header -->
+    <div class="row">
+      <header class="bg-light text-dark text-center text-md-start">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <div class="col-md-6 p-3 text-md-start text-center">
+            <h1 class="display-2">Philadelphia Wings</h1>
+            <h2 class="display-6 text-muted">Philadelphia, Pennsylvania</h2>
+            <p class="mb-0 text-muted fs-5"> 7 - 9</p>
+            <p class="mb-0 text-muted fs-5">6<sup>th</sup> East Conference</p>
+          </div>
+          <div class="col-md-6 text-md-end text-center">
+            <img class="img-fluid w-50 p-3 d-none d-md-inline" src="../Images/philadelphia_wings.png" alt="Wings Logo">
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Social Media Buttons -->
+    <div class="row">
+      <section class="text-dark text-center bg-light">
+        <div class="d-flex py-2 justify-content-center align-items-center">
+          <a href="https://wingslax.com/" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official website"> <!-- change link -->
+            <span class="bi bi-globe2 pe-1"></span>
+            <p class="mb-0 d-none d-md-block">Official Website</p>
+          </a>
+          <a href="https://www.youtube.com/@NLLWings" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official YouTube channel"> <!-- change link -->
+            <span class="bi bi-youtube pe-1"></span>
+            <p class="mb-0 d-none d-md-block">YouTube</p>
+          </a>
+          <a href="https://www.facebook.com/NLLWings/" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Facebook page"> <!-- change link -->
+            <span class="bi bi-facebook pe-1"></span>
+            <p class="mb-0 d-none d-md-block">Facebook</p>
+          </a>
+          <a href="https://www.instagram.com/NLLWings/" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Instagram"> <!-- change link -->
+            <span class="bi bi-instagram pe-1"></span>
+            <p class="mb-0 d-none d-md-block">Instagram</p>
+          </a>
+          <a href="https://twitter.com/nllwings" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official Twitter"> <!-- change link -->
+            <span class="bi bi-twitter pe-1"></span>
+            <p class="mb-0 d-none d-md-block">Twitter</p>
+          </a>
+          <a href="https://www.tiktok.com/@nllwings" class="d-flex align-items-center btn btn-sm btn-outline-secondary border-0 rounded-0 text-nowrap" title="Visit the team's official TikTok"> <!-- change link -->
+            <span class="bi bi-tiktok pe-1"></span>
+            <p class="mb-0 d-none d-md-block">TikTok</p>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Slideshow Carousel -->
+    <div class="row">
+      <section class="text-light bg-dark">
+        <div id="carouselHighlights" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item c-item">
+              <img src="../Images/christian-images/Thunderbirds-1-760x390.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+            </div>
+            <div class="carousel-item c-item">
+              <img src="../Images/christian-images/Thunderbirds-2.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+            </div>
+            <div class="carousel-item c-item">
+              <img src="../Images/christian-images/Thunderbirds-3.jpg" class="d-block w-100 c-img" alt="..."> <!-- change alt and src -->
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHighlights" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHighlights" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <div class="row">
+      <!-- Team + Schedule -->
+      <div class="col-md-9">
+        <!-- Meet the team -->
+        <div class="m-4 p-5 rounded bg-dark text-white">
+          <h2>Meet The Team</h2>
+          <img src="../Images/philadelphia_wings_photo.jpg" alt="Wings team" id="teamPhoto" style="padding-bottom: 1rem">
+          <p>The Philadelphia Wings are a professional box lacrosse team and part of the National Lacrosse League East Division. 
+            They play at the Wells Fargo Center in Philadelphia. The Wings were one of the original six members of the first National 
+            Lacrosse League and one of the original teams in the Eagle Pro Box Lacrosse League. The team moved to Connecticut in 2014 
+            but a new team started in 2018, bringing the Wings back to Philly.</p>
+        </div>
+
+        <!-- Schedule -->
+        <section>
+          <div class="row m-4">
+            <div class="col-md-12">
+              <h2>Team Schedule 2022/23</h2>
+              <div id="schedule">PW</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Roster Sidebar -->
+      <div class="col-md-3">
+        <div class="card m-4">
+          <div class="card-header">
+            <h5>Wings roster</h5>
+          </div>
+          <div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" style="background-color:gray">Forwards</li>
+              <li class="list-group-item">#1 <img src="../Images/USA.png" title="USA" alt="USA"> Matt Rambo</li>
+              <li class="list-group-item">#6 <img src="../Images/USA.png" title="USA" alt="USA"> Hunter Lemieux</li>
+              <li class="list-group-item">#10 <img src="../Images/USA.png" title="USA" alt="USA"> Blaze Riordan</li>
+              <li class="list-group-item">#15 <img src="../Images/USA.png" title="USA" alt="USA"> Joe Resetarits</li>
+              <li class="list-group-item">#23 <img src="../Images/canada.png" title="Canada" alt="Canada"> Cory Vitarelli</li>
+              <li class="list-group-item">#24 <img src="../Images/Iroquois.png" title="Iroquois" alt="Iroquois"> Mitch Jones</li>
+              <li class="list-group-item">#90 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ben McIntosh</li>
+              <li class="list-group-item">#91 <img src="../Images/canada.png" title="Canada" alt="Canada"> Taite Cattoni</li>
+              <li class="list-group-item">#92 <img src="../Images/canada.png" title="Canada" alt="Canada"> Sam Leclair</li>
+
+              <li class="list-group-item" style="background-color:gray">Transition</li>
+              <li class="list-group-item">#9 <img src="../Images/USA.png" title="USA" alt="USA"> Trevor Baptiste</li>
+              <li class="list-group-item">#46 <img src="../Images/canada.png" title="Canada" alt="Canada"> Kiel Matisz</li>
+              <li class="list-group-item">#73 <img src="../Images/Iroquois.png" title="Iroquois" alt="Iroquois"> Blake Gibson-McDonald</li>
+
+              <li class="list-group-item" style="background-color:gray">Defensemen</li>
+              <li class="list-group-item">#2 <img src="../Images/canada.png" title="Canada" alt="Canada"> Eric Shewell</li>
+              <li class="list-group-item">#3 <img src="../Images/canada.png" title="Canada" alt="Canada"> Brock Sorenson</li>
+              <li class="list-group-item">#7 <img src="../Images/canada.png" title="Canada" alt="Canada"> Alex Crepinsek</li>
+              <li class="list-group-item">#12 <img src="../Images/canada.png" title="Canada" alt="Canada"> Chad Tutton</li>
+              <li class="list-group-item">#26 <img src="../Images/USA.png" title="USA" alt="USA"> Isaiah Davis-Allen</li>
+              <li class="list-group-item">#29 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ian Llord</li>
+              <li class="list-group-item">#41 <img src="../Images/canada.png" title="Canada" alt="Canada"> Alex Pace</li>
+              <li class="list-group-item">#44 <img src="../Images/USA.png" title="USA" alt="USA"> John Ranagan</li>
+              <li class="list-group-item">#49 <img src="../Images/canada.png" title="Canada" alt="Canada"> Marcus Minichiello</li>
+              <li class="list-group-item">#81 <img src="../Images/canada.png" title="Canada" alt="Canada"> Liam Byrnes</li>
+              <li class="list-group-item">#94 <img src="../Images/canada.png" title="Canada" alt="Canada"> Ryan Wagner</li>
+
+              <li class="list-group-item" style="background-color:gray">Goaltenders</li>
+              <li class="list-group-item">#31 <img src="../Images/canada.png" title="Canada" alt="Canada"> Zach Higgins</li>
+              <li class="list-group-item">#55 <img src="../Images/canada.png" title="Canada" alt="Canada"> Angus Goodleaf</li>
+
+              <li class="list-group-item" style="background-color:gray">Practice Squad</li>
+              <li class="list-group-item">#0 <img src="../Images/canada.png" title="Canada" alt="Canada"> Patrick Resch</li>
+              <li class="list-group-item">#8 <img src="../Images/USA.png" title="USA" alt="USA"> Koby Smith</li>
+              <li class="list-group-item">#30 <img src="../Images/canada.png" title="Canada" alt="Canada"> Deacon Knott</li>
+              <li class="list-group-item">#50 <img src="../Images/USA.png" title="USA" alt="USA"> Christian Scarpello</li>
+              <li class="list-group-item">#84 Bryan Costabile</li>
+              <li class="list-group-item">#96 <img src="../Images/USA.png" title="USA" alt="USA"> George Downey</li>
+
+              <li class="list-group-item" style="background-color:gray">Injured Reserve</li>
+              <li class="list-group-item">#47 <img src="../Images/canada.png" title="Canada" alt="Canada"> Kyle Jackson</li>
+
+              <li class="list-group-item" style="background-color:gray">Coaches</li>
+              <li class="list-group-item">Paul Day (Head)</li>
+              <li class="list-group-item">Landon Miller</li>
+              <li class="list-group-item">Ian Rubel</li>
+              <li class="list-group-item">Jeff McComb</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+</div>
+
+<!-- popper.js MUST be included BEFORE bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script src="../js/team_schedule_generator.js"></script>
+
+<script>
+$(function() {
+  $.get("../partials/nav.php", function(data) {
+    $("#nav-placeholder").replaceWith(data);
+  });
+  $.get("../partials/footer.html", function(data) {
+    $("#footer-placeholder").replaceWith(data);
+  });
+});
+</script>
+</body>
+</html>
+
+<!--
+   <h1>THE PHILIDELPHIA WINGS</h1>
   <figure>
     <img src="../Images/philidelphia_wings.png" alt="Wings Logo" />
 
@@ -24,7 +220,8 @@
       Connecticut in 2014 but a new team started in 2018, bringing the Wings back to Philly. </p>
   </figure>
 
-<!-- Schedule -->
+
+
 <div class = "row">
   <div class="col-md-12">
     <h1>Schedule</h1>
@@ -141,7 +338,7 @@
   </div>
 </div>
 
-<!-- Roster -->
+
 <div class = "row">
   <div class = "col-md-12">
     <h1>Roster</h1>
@@ -313,30 +510,4 @@
       </table>
     </div>
   </div>
-   
-  <div id="footer-placeholder"></div>
-
-	  <!-- popper.js MUST be included BEFORE bootstrap -->
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
-	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-			  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-			  crossorigin="anonymous">
-	  </script>
-
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-
-	  <script src="../js/team_schedule_generator.js"></script>
-	  <script>
-		$(function() {
-		  $.get("../partials/nav.php", function(data) {
-			$("#nav-placeholder").replaceWith(data);
-		  });
-		  $.get("../partials/footer.html", function(data) {
-			$("#footer-placeholder").replaceWith(data);
-		  });
-		});
-	  </script>
-	</div>
-</body>
-</html>
+-->
