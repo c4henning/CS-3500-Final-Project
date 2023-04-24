@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
-	<!-- Navigation Start-->
-  <div id="nav-placeholder"></div>
+<!-- Navigation Start-->
+<div id="nav-placeholder"></div>
 <!-- Navigation End-->
 <div class="container">
 
@@ -67,33 +67,30 @@
             <p>The pages I personally worked on were the <a href="EAST_TEAMS/PHILIDELPHIA_WINGS.html">Wings</a>, <a href="WEST_TEAMS/COLORADO_MAMMOTH.html">Mammoth</a>, <a href="WEST_TEAMS/CALGARY_ROUGHNECKS.html">Roughnecks</a>, and <a href="MORE/RULES.html">Rules</a> pages. I also made everything besides the slideshow and navigation on the <a href="index.html">index</a> page.</p>
 		</div>
 	</div>
-
-
 </div>
-   
-  <div id="footer-placeholder"></div>
 
-	  <!-- popper.js MUST be included BEFORE bootstrap -->
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
-	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-			  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-			  crossorigin="anonymous">
-	  </script>
+<div id="footer-placeholder"></div>
 
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<!-- popper.js MUST be included BEFORE bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 
 
-	  <script>
-		$(function() {
-		  $.get("../partials/nav.php", function(data) {
-			$("#nav-placeholder").replaceWith(data);
-		  });
-		  $.get("../partials/footer.html", function(data) {
-			$("#footer-placeholder").replaceWith(data);
-		  });
-		});
-	  </script>
-	</div>
+<script>
+    $(function () {
+        $.get("../partials/nav.php", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+        $.get("../partials/footer.html", function (data) {
+            $("#footer-placeholder").replaceWith(data);
+        });
+    });
+</script>
 </body>
 </html>
